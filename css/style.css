@@ -204,3 +204,9 @@ footer .border-container {
   border-right: 0;
   border-bottom: 0;
 }
+
+footer span {
+  font-size: .8rem;
+  color: white;
+  vertical-align: middle;
+}
