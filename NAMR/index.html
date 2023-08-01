@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NAMr</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    
+    <main>
+        <div class="border-container py-5">
+          <div class="upper-lines"></div>
+          <section class="container">
+              <div></div>
+              <div></div>
+          </section>
+          <section class="container">
+            <form action="">
+              <div class="row mb-4">
+                <div class="col-12">
+                  <label for="contentName" class="form-label">Content Name</label>
+                  <input type="text" name="contentName" id="contentName" class="form-control" placeholder="Hi I'm NAMr! What do you want to call your piece of content?">
+                </div>
+              </div>
+
+              <div class="row mb-4"><!--upper options -->
+                <div class="col-12 col-sm-4"><!--ps-sm-0-->
+                  <label class="form-label" for="tactic">Tactic<span>*</span></label>
+                  <select name="tactic" id="tactic" class="form-select" aria-label="Tactic">
+                    <option value="NA">N/A</option>
+                    <option value="test1">Test1</option>
+                    <option value="test2">Test2</option>
+                    <option value="test3">Test3</option>
+                  </select>
+                </div>
+                <div class="col-12 col-sm-4">
+                  <label class="form-label" for="topic">Topic<span>*</span></label>
+                  <select name="topic" id="topic" class="form-select" aria-label="Topic">
+                    <option value="NA">N/A</option>
+                    <option value="test1">Test1</option>
+                    <option value="test2">Test2</option>
+                    <option value="test3">Test3</option>
+                  </select>
+                </div>
+                <div class="col-12 col-sm-4"><!--pe-sm-0-->
+                  <label class="form-label" for="tone">Tone<span>*</span></label>
+                  <select name="tone" id="tone" class="form-select" aria-label="Tone">
+                    <option value="NA">N/A</option>
+                    <option value="test1">Test1</option>
+                    <option value="test2">Test2</option>
+                    <option value="test3">Test3</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="row mb-4">
+                <div class="col-12">
+                  <label for="landingPageUrl" class="form-label">Landing Page URL</label>
+                  <input type="text" name="landingPageUrl" id="landingPageUrl" class="form-control" placeholder="https://www.pg.com">
+                </div>
+              </div>
+              
+              <div class="row mb-4">
+                <p class=""><strong>Platform</strong>(Source)</p>
+                <div class="checkBoxContainer col-12 d-sm-flex flex-wrap flex-column flex-sm-row">
+                  <label class="form-check form-check-label col" for="facebook">
+                    <input type="checkbox" class="form-check-input" id="facebook" value="Facebook">
+                    Facebook
+                  </label>
+
+                  <label class="form-check form-check-label col" for="basis">
+                    <input type="checkbox" class="form-check-input" id="basis" value="Basis">
+                    Basis
+                  </label>
+
+                  <label class="form-check form-check-label col" for="xandr">
+                    <input type="checkbox" class="form-check-input" id="xandr" value="Xandr">
+                    Xandr
+                  </label>
+
+                  <label class="form-check form-check-label col" for="google">
+                    <input type="checkbox" class="form-check-input" id="google" value="Google">
+                    Google
+                  </label>
+
+                  <label class="form-check form-check-label col" for="emailHouse">
+                    <input type="checkbox" class="form-check-input" id="emailHouse" value="Email House">
+                    Email House
+                  </label>
+
+                  <label class="form-check form-check-label col" for="shortCodeHouse">
+                    <input type="checkbox" class="form-check-input" id="shortCodeHouse" value="Shortcode House">
+                    Shortcode House
+                  </label>
+
+                  <label class="form-check form-check-label col" for="p2pHouse">
+                    <input type="checkbox" class="form-check-input" id="p2pHouse" value="P2P House">
+                    P2P House
+                  </label>
+
+                  <label class="form-check form-check-label col" for="revShare">
+                    <input type="checkbox" class="form-check-input" id="revShare" value="Rev Share">
+                    Rev Share
+                  </label>
+
+                  <label class="form-check form-check-label col" for="listRentals">
+                    <input type="checkbox" class="form-check-input" id="listRentals" value="List Rentals">
+                    List Rentals
+                  </label>
+
+                  <label class="form-check form-check-label col" for="snap">
+                    <input type="checkbox" class="form-check-input" id="snap" value="Snap">
+                    Snap
+                  </label>
+
+                  <label class="form-check form-check-label col" for="linkedIn">
+                    <input type="checkbox" class="form-check-input" id="linkedIn" value="LinkedIn">
+                    LinkedIn
+                  </label>
+
+                  <label class="form-check form-check-label col" for="link">
+                    <input type="checkbox" class="form-check-input" id="link" value="Link">
+                    Link
+                  </label>
+
+                </div><!--checkboxcontainer end-->
+              </div>
+
+              <div class="row mb-4"><!--lower options -->
+                <div class="col-12 col-sm-4"><!--ps-sm-0-->
+                  <label class="form-label col-12" for="campaignObjective">Campaign Objective</label>
+                  <select name="campaignObjective" id="campaignObjective" class="form-select col" aria-label="Campaign Objective">
+                    <option value="NA">N/A</option>
+                    <option value="test1">Test1</option>
+                    <option value="test2">Test2</option>
+                    <option value="test3">Test3</option>
+                  </select>
+                </div>
+                <div class="col-12 col-sm-4">
+                  <label class="form-label col-12" for="mediaType">Media Type</label>
+                  <select name="mediaType" id="mediaType" class="form-select col" aria-label="Media Type">
+                    <option value="NA">N/A</option>
+                    <option value="test1">Test1</option>
+                    <option value="test2">Test2</option>
+                    <option value="test3">Test3</option>
+                  </select>
+                </div>
+                <div class="col-12 col-sm-4"><!--pe-sm-0-->
+                  <label class="form-label col-12" for="fundraisingAmount">Fundraising Amount</label>
+                  <select name="fundraisingAmount" id="fundraisingAmount" class="form-select col" aria-label="Fundraising Amount">
+                    <option value="NA">N/A</option>
+                    <option value="test1">Test1</option>
+                    <option value="test2">Test2</option>
+                    <option value="test3">Test3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row mb-4">
+                <div class="col-12 col-sm-4">
+                  <label for="audienceName" class="form-label col-12">Audience Name</label>
+                  <input type="text" name="audienceName" id="audienceName" class="form-control col-12" placeholder="">
+                </div>
+
+                <div class="col-12 col-sm-4">
+                  <label class="form-label col-12" for="clientName">Client Name</label>
+                  <select name="clientName" id="clientName" class="form-select col" aria-label="Client Name">
+                    <option value="test1">Test1</option>
+                    <option value="test2">Test2</option>
+                    <option value="test3">Test3</option>
+                  </select>
+                </div>
+
+                <div class="col-12 col-sm-4">
+                  <label class="form-label col-12" for="organization">Organization</label>
+                  <select name="organization" id="organization" class="form-select col" aria-label="Organization">
+                    <option value="test1">Test1</option>
+                    <option value="test2">Test2</option>
+                    <option value="test3">Test3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row mb-4">
+                <div class="col-12 col-sm-4">
+                  <label class="form-label col-12" for="campaignType">Campaign Type</label>
+                  <select name="campaignType" id="campaignType" class="form-select col" aria-label="Campaign Type">
+                    <option value="test1">Test1</option>
+                    <option value="test2">Test2</option>
+                    <option value="test3">Test3</option>
+                  </select>
+                </div>
+
+                <div class="col-12 col-sm-4">
+                  <label class="form-label col-12" for="optimizationType">Optimization Type</label>
+                  <select name="optimizationType" id="optimizationType" class="form-select col" aria-label="Optimization Type">
+                    <option value="test1">Test1</option>
+                    <option value="test2">Test2</option>
+                    <option value="test3">Test3</option>
+                  </select>
+                </div>
+
+                <div class="col-12 col-sm-4">
+                  <label class="form-label col-12" for="targetingMethod">Targeting Method</label>
+                  <select name="targetingMethod" id="targetingMethod" class="form-select col" aria-label="Targeting Method">
+                    <option value="test1">Test1</option>
+                    <option value="test2">Test2</option>
+                    <option value="test3">Test3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row mb-5">
+                <div class="col-12 col-sm-4">
+                  <label for="geo" class="form-label col-12">Geo</label>
+                  <input type="text" name="geo" id="geo" class="form-control col-12" placeholder="">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-12 col-md-6 mb-3">
+                  <div class="card text-bg-secondary">
+                    <div class="card-header">
+                      <p>Accelo Trafficking Tasks</p>
+                    </div>
+                    <div class="card-body d-none">
+                      <p>Tasks:</p>
+                      <p></p>
+
+                      <p>Notes:</p>
+                      <p></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 mb-3">
+                  <div class="card text-bg-secondary">
+                    <div class="card-header">
+                      <p>Landing Pages, Texting and Email Sends</p>
+                    </div>
+                    <div class="card-body d-none">
+                      <p>Name:</p>
+                      <p></p>
+
+                      <p>Key:</p>
+                      <p>Agency_Medium_ContentName_UniqueValue_TodaysDate_Ver</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 mb-3">
+                  <div class="card text-bg-secondary">
+                    <div class="card-header">
+                      <p>Ad Platform Naming Convention</p>
+                    </div>
+                    <div class="card-body d-none">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 mb-3">
+                  <div class="card text-bg-secondary">
+                    <div class="card-header">
+                      <p>Final URL(s)</p>
+                    </div>
+                    <div class="card-body d-none">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+
+            <div class="row">
+              <div class="col-12">
+                <p class="mb-0"><span>*</span>= required</p>
+              </div>
+            </div>
+
+            <!-- use  card in place of panels -->
+          </section>
+          <div class="lower-lines"></div>
+        </div>
+    </main>
+
+    <footer class="bg-primary">
+      <div class="border-container">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <img src="../assets/pg-logo-white.png" alt="Prosper Group Logo" class="img-fluid">
+            </div>
+            <div class="col-12 text-white">&copy; 2023 The Prosper Group | All Rights <Reserved></Reserved></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
