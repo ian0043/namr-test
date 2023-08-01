@@ -1,9 +1,14 @@
 :root {
   --bs-primary-rgb: 30, 33, 40;
   --bs-secondary-rgb: 98, 104, 120;
+  --bs-success-rgb: 171, 197, 83;
 
   --line-height: 2.1rem;
   --line-thickness: 1px;
+}
+
+.dNone {
+  display: none;
 }
 
 
@@ -212,5 +217,5 @@ footer p span {
 }
 
 footer p {
-  padding-inline: calc(var(--bs-gutter-x) * .5);
+  padding-block: calc(var(--bs-gutter-x) * .5);
 }
