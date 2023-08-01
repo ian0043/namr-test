@@ -1,0 +1,159 @@
+:root {
+  --bs-primary-rgb: 30, 33, 40;
+  --bs-secondary-rgb: 98, 104, 120;
+}
+
+
+/* reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* 1 */
+}
+html {
+  font-family: sans-serif; /* 2 */
+  line-height: 1.15; /* 3 */
+  -webkit-text-size-adjust: 100%; /* 4 */
+  -ms-text-size-adjust: 100%; /* 4 */
+  -ms-overflow-style: scrollbar; /* 5 */
+  -webkit-tap-highlight-color: transparent; /* 6 */
+}
+/* IE10+ doesn't honor `<meta name="viewport">` in some cases. */
+@-ms-viewport {
+  width: device-width;
+}
+/* stylelint-disable selector-list-comma-newline-after
+Shim for "new" HTML5 structural elements to display correctly (IE10, older browsers) */
+article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+body {
+  margin: 0; /* 1 */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left; /* 3 */
+  background-color: #fff; /* 2 */
+}
+/*
+Suppress the focus outline on elements that cannot be accessed via keyboard.
+This prevents an unwanted focus outline from appearing around elements that might still respond to pointer events.
+Credit: https://github.com/suitcss/base
+*/
+[tabindex="-1"]:focus {
+  outline: none !important;
+}
+/* 
+Content grouping
+1. Add the correct box sizing in Firefox.
+2. Show the overflow in Edge and IE.
+*/
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/* style start */
+body {
+    /* padding: 2rem 2rem 0 2rem; */
+}
+
+main {
+    padding: 2rem 2rem 0 2rem;
+    margin-bottom: 2rem;
+}
+
+span {
+  color: red;
+}
+
+main .border-container {
+  position: relative;
+}
+
+/* corner border */
+main .upper-lines::before,
+main .upper-lines::after,
+main .lower-lines::before,
+main .lower-lines::after {
+  content: '';
+  position: absolute;
+  background-color: rgb(98, 104, 120);
+}
+
+main .upper-lines::before {
+  height: 2.1rem;
+  width: 1px;
+  top: -2.1rem;
+  right: -1px;
+}
+main .upper-lines::after {
+  height: 1px;
+  width: 2.1rem;
+  top: -1px;
+  right: -2.05rem;
+}
+
+main .lower-lines::before {
+  height: 2.1rem;
+  width: 1px;
+  bottom: -2.1rem;
+  left: -1px;
+}
+
+main .lower-lines::after {
+  height: 1px;
+  width: 2.1rem;
+  bottom: -1px;
+  left: -2.1rem;
+}
+
+/* checkbox */
+.checkBoxContainer .form-check-input[type=checkbox] {
+    margin-right: 0.5rem;
+}
+
+label.form-check.form-check-label {
+    font-size: 13px;
+    /* font-weight: bold; */
+    display: flex;
+    flex-basis: fit-content;
+}
+
+/* input styles */
+input[type="text"], form select {
+    border: none!important;
+    border-bottom: 1px solid!important;
+    border-radius: 0!important;
+}
+
+input[type="text"]:focus, form select:focus {
+    box-shadow: inset 0 -3px 0 0 #bdb!important;
+}
+
+/* card P */
+form .card p {
+  margin: 0;
+}
+
+/* border-container */
+.border-container {
+  border: 1px solid #626878;
+}
+
+/* footer */
+footer {
+  padding-inline: 2rem;
+}
+
+footer .border-container {
+  padding-block: 5rem;
+  border-left: 1px solid #626878;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
+}
