@@ -210,3 +210,7 @@ footer span {
   color: white;
   vertical-align: middle;
 }
+
+footer p {
+  padding-inline: calc(var(--bs-gutter-x) * .5);
+}
