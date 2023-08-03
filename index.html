@@ -15,11 +15,12 @@
     <!-- End Google Tag Manager -->
 
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/context-highlight.css">
 
     <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
     <script type="text/javascript" src="js/knockout-3.4.0.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     
@@ -852,11 +853,11 @@
                     <div class="card-header">
                       <p>Accelo Trafficking Tasks</p>
                     </div>
-                    <div class="card-body dNone">
+                    <div class="card-body">
                       <strong>Tasks:</strong>
                       <div data-bind="foreach: $root.generateTaskNames">
                         <ul>
-                          <li style="list-style:none;" data-bind="text: $data"></li>
+                          <li style="list-style:none;" data-bind="text: $data" class="copyClipboard"></li>
                         </ul>
                       </div>
 
@@ -870,11 +871,11 @@
                     <div class="card-header">
                       <p>Landing Pages, Texting and Email Sends</p>
                     </div>
-                    <div class="card-body dNone">
+                    <div class="card-body">
                       <strong>Name:</strong>
                       <div data-bind="foreach: $root.generatePageNames">
                         <ul>
-                          <li style="list-style:none;" data-bind="text: $data"></li>
+                          <li style="list-style:none;" data-bind="text: $data" class="copyClipboard"></li>
                         </ul>
                       </div>
 
@@ -889,7 +890,7 @@
                     <div class="card-header">
                       <p>Ad Platform Naming Convention</p>
                     </div>
-                    <div class="card-body dNone">
+                    <div class="card-body" data-bind="foreach: $root.platforms">
                       <div data-bind="if: $data === 'Facebook'">
                         <strong>Facebook</strong>
                         <strong>Camp:</strong>
@@ -936,6 +937,7 @@
                       <!-- /ko -->
                       <!-- ko if: $root.googleAdGroupMedium() == 'Video' -->  
                         <span class="copyClipboard" data-bind="text: $root.googleObjective()  + '_' + $root.googleMedium() + '_' + $root.googleOptimizationType() + '_' +$root.cleanGeo() + '_'+$root.curYear()+'_[1234]_'+ $root.cleanAudience() +'_[Skip/NonSkip]'"></span>
+                        <!-- /ko -->
                         <strong>Ad Group:</strong>
                          <!-- ko if: $root.googleAdGroupMedium() == 'Search' --> 
                         <span  class="copyClipboard" data-bind="text: $root.googleAdGroupMedium() + '_' + $root.googleTargetMethod() +'_' + $root.cleanCreative()"></span>
@@ -953,18 +955,32 @@
                 </div>
 
                 <div class="col-12 col-md-6 mb-3">
-                  <div class="card text-bg-secondary" id="urlPanel" data-bind="css: { 'text-bg-secondary': !goodState(), 'text-bg-success': goodState() }">
+                  <!-- <div class="card text-bg-secondary" id="urlPanel" data-bind="css: { 'text-bg-secondary': !goodState(), 'text-bg-success': goodState() }">
                     <div class="card-header">
                       <p>Final URL(s)</p>
                     </div>
-                    <div class="card-body dNone" data-bind="foreach: platforms">
+                    <div class="card-body" data-bind="foreach: platforms">
                       <div class="row">
-                        <div class="col-12"><a target="_blank" href="" data-bind="html: ($root.finalUrlColoredFront()) + $data + ($root.finalUrlColoredBack()), attr: { href: ($root.finalUrlFront()) + $data + ($root.finalUrlBack()), }"></a>
+                        <div class="col-12">
+                          <a data-bind="html: ($root.finalUrlColoredFront()) + $data + ($root.finalUrlColoredBack()), attr: { href: ($root.finalUrlFront()) + $data + ($root.finalUrlBack()), }" target="_blank" href=""></a>
                         </div>
                         <br><br>
                     </div>
                     </div>
+                  </div> -->
+                
+                  <div class="card text-bg-secondary" data-bind="css: { 'text-bg-secondary': !goodState(), 'text-bg-success': goodState() }">
+
+                    <div class="card-header">Final URL(s)</div>
+                    <div data-bind="foreach: platforms" class="card-body">
+                      <div class="row">
+                          <div class="col-md-5"><a target="_blank" href="" data-bind="html: ($root.finalUrlColoredFront()) + $data + ($root.finalUrlColoredBack()), attr: { href: ($root.finalUrlFront()) + $data + ($root.finalUrlBack()), }"></a>
+                          </div>
+                          <br><br>
+                      </div>
+                    </div>
                   </div>
+                
                 </div>
               </div>
             </form>
@@ -1016,7 +1032,7 @@
                   $this = $(this);
   
   
-              $this.addClass('success').removeClass('danger');
+              $this.addClass('success').removeClass('secondary');
   
             })
             .on('focus',"textarea.pixel",function() { $(this).select(); } )
