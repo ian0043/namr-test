@@ -1,0 +1,33 @@
+.context-link-1 {
+    color: red;
+}
+
+.context-link-2 {
+    color: seagreen;
+}
+
+.context-link-3 {
+    color: orange;
+}
+
+.context-link-4 {
+    color: purple;
+}
+
+.context-link-5 {
+    color: goldenrod;
+}
+
+.context-link-6 {
+    color: magenta;
+}
+
+.context-link-default {
+    color: #08c;
+}
+
+.text-bg-secondary .card-body {
+    display: none;
+}
+
+
