@@ -219,3 +219,15 @@ footer p span {
 footer p {
   padding-block: calc(var(--bs-gutter-x) * .5);
 }
+
+/* displaygroupurl */
+.displayUrlGroup .card-body {
+  background-color: #fff!important;
+  color: #212529!important;
+  height: 200px;
+  overflow: hidden;
+}
+
+.displayUrlGroup .card-body:hover {
+  overflow-y: scroll;
+}

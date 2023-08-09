@@ -32,7 +32,7 @@
                 <div class="col-7 col-md-8 col-lg-10 d-flex align-items-center">
                   <div class="row">
                     <div class="col-10 col-md-6 col-lg-4">
-                      <img src="https://raw.githubusercontent.com/ian0043/namr-test/main/assets/namr-logo.png" alt="Prosper Group Logo" class="img-fluid">
+                      <img src="/assets/namr-logo.png" alt="Prosper Group Logo" class="img-fluid">
                     </div>
                   </div>
                 </div>
@@ -955,19 +955,6 @@
                 </div>
 
                 <div class="col-12 col-md-6 mb-3">
-                  <!-- <div class="card text-bg-secondary" id="urlPanel" data-bind="css: { 'text-bg-secondary': !goodState(), 'text-bg-success': goodState() }">
-                    <div class="card-header">
-                      <p>Final URL(s)</p>
-                    </div>
-                    <div class="card-body" data-bind="foreach: platforms">
-                      <div class="row">
-                        <div class="col-12">
-                          <a data-bind="html: ($root.finalUrlColoredFront()) + $data + ($root.finalUrlColoredBack()), attr: { href: ($root.finalUrlFront()) + $data + ($root.finalUrlBack()), }" target="_blank" href=""></a>
-                        </div>
-                        <br><br>
-                    </div>
-                    </div>
-                  </div> -->
                 
                   <div class="card text-bg-secondary" data-bind="css: { 'text-bg-secondary': !goodState(), 'text-bg-success': goodState() }">
 
@@ -983,6 +970,8 @@
                 
                 </div>
               </div>
+
+
             </form>
 
             <div class="row">
@@ -1002,7 +991,7 @@
         <div class="container">
           <div class="row">
             <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-              <img src="https://raw.githubusercontent.com/ian0043/namr-test/main/assets/pg-logo-white.png" alt="Prosper Group Logo" class="img-fluid">
+              <img src="../assets/pg-logo-white.png" alt="Prosper Group Logo" class="img-fluid">
             </div>
             <div class="col-12 text-white">
               <p class="mb-0"><span>&copy;</span> 2023 The Prosper Group | All Rights Reserved</p>
@@ -1404,9 +1393,11 @@
         this.checkLandingPageNamesDep = (function(c){
           if( isEmpty(this.cleanCreative()) || isEmpty(this.appeal()) || this.appeal()=='na' || isEmpty(this.issues()) || this.issues()=='*' || isEmpty(this.subissues()) || this.subissues()=='*' ) {
             console.log("LandingPageDep: FALSE");
+            console.log(this.landingurl);
             return false;
           } else {
             console.log("LandingPageDep: TRUE");
+            console.log(this.landingurl);
             return true;
           }
         });
@@ -1581,6 +1572,7 @@
           if( this.checkFinalURLsDep() ) { 
               this.goodState(true);
               return normalizeUrl(this.landingurl())+"?utm_source=";
+              
             } else {
               this.goodState(false);
             }
@@ -1643,6 +1635,7 @@
                     a+"<br><br>";
             } else {
               this.goodState(false);
+                          
             }
         },this);
         
