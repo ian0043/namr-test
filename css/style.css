@@ -150,10 +150,15 @@ main .lower-lines::after {
 }
 
 label.form-check.form-check-label {
-    font-size: 13px;
+    /* font-size: 13px; */
+    /* display: flex;
+    flex-basis: fit-content; */
+
+    font-size: 1rem;
     /* font-weight: bold; */
     display: flex;
-    flex-basis: fit-content;
+    flex-basis: auto;
+    margin-inline: 1.5rem;
 }
 
 .form-check-input:checked {
