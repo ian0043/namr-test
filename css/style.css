@@ -154,11 +154,11 @@ label.form-check.form-check-label {
     /* display: flex;
     flex-basis: fit-content; */
 
-    font-size: 1rem;
+    font-size: .95rem; /*1rem*/
     /* font-weight: bold; */
     display: flex;
     flex-basis: auto;
-    margin-inline: 1.5rem;
+    margin-inline: .2rem /*1.5rem;*/
 }
 
 .form-check-input:checked {
