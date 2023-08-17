@@ -298,7 +298,7 @@ footer p {
   top: -2rem;
   left: -2rem;
   width: calc(100vw - 0.95rem);
-  background-image: url('../assets/pixelbg.jpg');
+  background-image: url('https://raw.githubusercontent.com/ian0043/namr-test/main/assets/pixelbg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
