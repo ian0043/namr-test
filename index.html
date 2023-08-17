@@ -1,1673 +1,1650 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>NAMr</title>
-    <meta name="robots" content="noindex, nofollow">
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-KNWGJT3');</script>
-    <!-- End Google Tag Manager -->
+<!DOCTYPE html>
+<html lang="en" >
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>NAMr</title>
+      <meta name="robots" content="noindex, nofollow">
+      <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+         })(window,document,'script','dataLayer','GTM-KNWGJT3');
+      </script>
+      <!-- End Google Tag Manager -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/context-highlight.css">
+      <link rel="stylesheet" href="css/style.css">
+      <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="js/knockout-3.4.0.min.js"></script>
+      <script src="js/clippy.min.js"></script>
+   </head>
+   <body role="document">
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KNWGJT3"
+         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+
+	<main>
+		<section class="bgContainer">
+			<div class="container-fluid">
+				<div class="pixelBg"></div>
+			</div>
+		</section>
+
+		<div class="border-container py-5">
+			<div class="upper-lines"></div>
+			<section class="container py-5">
+				<div class="row py-5">
+				  <div class="col-7 col-md-8 col-lg-10 d-flex align-items-center">
+					<div class="row">
+					  <div class="col-10 col-md-6 col-lg-4">
+						<img src="/assets/namr-logo.png" alt="Prosper Group Logo" class="img-fluid">
+					  </div>
+					</div>
+				  </div>
+				  <div class="col-5 col-md-4 col-lg-2">
+					<div class="legends">
+					  <p class="adOps">AdOps Related</p>
+					  <p class="accounts">Accounts Related</p>
+					</div>
+				  </div>
+				</div>
+			</section>
+	
+
+		<div class="container">
+			<form role="form">
+				<!-- Content Name Start START-->		
+				<div class="row">
+				<div class="col-12 mb-4">
+					<label for="contentName" class="form-label">Content Name</label>
+					<input type="text" name="contentName" id="contentName" class="form-control" placeholder="Hi I'm NAMr! What do you want to call your piece of content?" data-bind="value: creative">
+				</div>
+				</div>
+				<!-- Content Name end END-->
+				<!-- Tactic/Topic/Tone Start -->
+				<div class="row">
+				<div class="col-12 col-md-4 mb-4">
+					<!--ps-sm-0-->
+					<label class="form-label" for="tactic">Tactic<span>*</span></label>
+					<select name="tactic" id="tactic" class="form-select" aria-label="Tactic" data-bind="value: appeal">
+						<option value="na" selected>&nbsp;</option>
+						<option value="Deadline">Urgent Deadline</option>
+						<option value="Issue">Issue Based Appeal</option>
+						<option value="Attack">Attack Democrat</option>
+						<option value="Defend">Defend Republican</option>
+						<option value="Other">Other Camp Ask</option>
+						<option value="Engagement">Engagement Pol/Petition</option>
+						<option value="Signer">Special Guest Signer</option>
+						<option value="Funding">Funding Tangible Items</option>
+						<option value="Update">Campaign Polling/Fundraising Update</option>
+						<option value="Other">Other</option>
+					</select>
+				</div>
+				<div class="col-12 col-md-4 mb-4">
+					<label class="form-label" for="topic">Topic<span>*</span></label>
+					<select name="topic" id="topic" class="form-select" aria-label="Topic" data-bind="value: issues">
+						<option value="na" selected>&nbsp;</option>
+						<option value="*">*</option>
+						<option value="AgRural">Ag/Rural</option>
+						<option value="BigTech">BigTech</option>
+						<option value="BreakingNews">Breaking News OTD</option>
+						<option value="Campaign">Campaign Messaging</option>
+						<option value="COVID">COVID</option>
+						<option value="CriminalJustice">Criminial Justice</option>
+						<option value="CultureWar">Culture War/Woke/Viral</option>
+						<option value="Economy">Economy</option>
+						<option value="Education">Education</option>
+						<option value="Energy">Energy Independence</option>
+						<option value="Immigration">Immigration</option>
+						<option value="Local">Local Issues</option>
+						<option value="Majority">Majority</option>
+						<option value="NatSecurity">National Security/Military</option>
+						<option value="Pro-Life">Pro-Life</option>
+						<option value="Pro-2A">Pro-2A</option>
+						<option value="SupremeCourt">Supreme Court</option>
+						<option value="Holiday">Holiday</option>
+						<option value="Other">OTHER</option>
+					</select>
+				</div>
+				<div class="col-12 col-md-4 mb-4">
+					<!--pe-sm-0-->
+					<label class="form-label" for="tone">Tone<span>*</span></label>
+					<select name="tone" id="tone" class="form-select" aria-label="Tone" data-bind="value: subissues, options: $root.generateSubIssue">
+					</select>
+				</div>
+				</div>
+				<!-- Tactic/Topic/Tone End -->
+				<!-- URL Start -->
+				<div class="row">
+				<div class="col-12 mb-4">		
+					<label for="landingPageUrl" class="form-label">Landing Page URL</label>
+					<input type="url" id="landingPageUrl" class="form-control" data-bind="value: landingurl" placeholder="https://www.pg.com">
+				</div>
+				</div>
+				<!-- URL End -->
+				<!-- Platform Start-->		
+				<div class="row">
+				<p class=""><strong>Platform</strong>(Source)</p>
+				<div class="checkBoxContainer col-12 d-sm-flex flex-wrap flex-column flex-sm-row mb-4">
+					<label class="form-check form-check-label col" for="facebook">
+					<input type="checkbox" class="form-check-input" id="facebook" value="Facebook" data-bind="checked: platforms">
+					Facebook
+					</label>
+					<label class="form-check form-check-label col" for="basis">
+					<input type="checkbox" class="form-check-input" id="basis" value="DSP" data-bind="checked: platforms">
+					Basis
+					</label>
+					<label class="form-check form-check-label col" for="google">
+					<input type="checkbox" class="form-check-input" id="google" value="Adwords" data-bind="checked: platforms">
+					Google
+					</label>
+					<label class="form-check form-check-label col" for="emailHouse">
+					<input type="checkbox" class="form-check-input" id="emailHouse" value="E-HouseFile" data-bind="checked: platforms">
+					Email House
+					</label>
+					<label class="form-check form-check-label col" for="shortCodeHouse">
+					<input type="checkbox" class="form-check-input" id="shortCodeHouse" value="SC-HouseFile" data-bind="checked: platforms">
+					Shortcode House
+					</label>
+					<label class="form-check form-check-label col" for="p2pHouse">
+					<input type="checkbox" class="form-check-input" id="p2pHouse" value="P2P-HouseFile" data-bind="checked: platforms">
+					P2P House
+					</label>
+					<label class="form-check form-check-label col" for="revShare">
+					<input type="checkbox" class="form-check-input" id="revShare" value="RevShare" data-bind="checked: platforms">
+					Rev Share
+					</label>
+					<label class="form-check form-check-label col" for="listRentals">
+					<input type="checkbox" class="form-check-input" id="listRentals" value="ListRental" data-bind="checked: platforms">
+					List Rentals
+					</label>
+					<label class="form-check form-check-label col" for="snap">
+					<input type="checkbox" class="form-check-input" id="snap" value="Snap" data-bind="checked: platforms">
+					Snap
+					</label>
+					<label class="form-check form-check-label col" for="linkedIn">
+					<input type="checkbox" class="form-check-input" id="linkedIn" value="LinkedIn" data-bind="checked: platforms">
+					LinkedIn
+					</label>
+					<label class="form-check form-check-label col" for="link">
+					<input type="checkbox" class="form-check-input" id="link" value="Link" data-bind="checked: platforms">
+					Link
+					</label>
+					<label class="form-check form-check-label col" for="twitter">
+					<input type="checkbox" class="form-check-input" id="twitter" value="Twitter" data-bind="checked: platforms">
+					Twitter
+					</label>
+				</div>
+				</div>
+				<!-- Platform End-->
+				<div class="row">
+				<!-- Campaign Objective start -->
+				<div class="col-md-4 mb-4">
+					<label class="form-label col-12" for="campaignObjective">Campaign Objective</label>
+					<select name="campaignObjective" id="campaignObjective" class="form-select col" aria-label="Campaign Objective" data-bind="value: objective">
+						<option value="FR" selected>Fundraising</option>
+						<option value="ACQ">Acquisition</option>
+						<option value="PER">Persuasion</option>
+						<option value="MOB">Mobilization</option>
+						<option value="SOC">Social Post</option>
+					</select>
+				</div>
+				<!-- Campaign Objective end -->
+				<!-- Media Type start -->
+				<div class="col-md-4 mb-4">
+					<label class="form-label col-12" for="mediaType">Media Type</label>
+					<select name="mediaType" id="mediaType" class="form-select col" aria-label="Media Type" data-bind="value: medium">
+						<option value="" selected></option>
+						<option value="Motion_Graphic">Motion Graphic</option>
+						<option value="Static_Graphic">Static Graphic</option>
+						<option value="Video">Video</option>
+						<option value="Social">Social Post</option>
+						<option value="Search">Search</option>
+						<option value="Email">Email</option>
+						<option value="SMS">SMS</option>
+						<option value="MMS">MMS</option>
+						<option value="Audio">Audio</option>
+						<option value="Redirect">Redirect</option>
+						<option value="Filter">Filter</option>
+					</select>
+				</div>
+				<!-- Media Type end -->
+				<!-- Fundraising start -->
+				<div class="col-md-4 mb-4">
+					<label class="form-label col-12" for="fundraisingAmount">Fundraising Amount</label>
+					<select name="fundraisingAmount" id="fundraisingAmount" class="form-select col" aria-label="Fundraising Amount" data-bind="value: amount">
+						<option value="na" selected>N/A</option>
+						<option value="amount=">Amount=</option>
+					</select>
+				</div>
+				<!-- Fundraising end -->
+				<!-- Audience Name start -->
+				<div class="col-md-4 mb-4">
+					<label for="audienceName" class="form-label col-12">Audience Name</label>
+					<input type="text" name="audienceName" id="audienceName" class="form-control col-12" placeholder="" data-bind="value: audience">
+				</div>
+				<!-- Audience Name end -->
+				<!-- Clien Name start -->
+				<div class="col-md-4 mb-4">
+					<label class="form-label col-12" for="clientName">Client Name</label>
+					<select name="clientName" id="clientName" class="form-select col" aria-label="Client Name" data-bind="value: client">
+						<option value="" selected></option>
+						<option value="AAF">AAF (via Comcast)</option>
+						<option value="Adkins">Adkins, Amanda</option>
+						<option value="AdvancingFlorida">Advancing Florida</option>
+						<option value="AffordableEnergy">Affordable Energy Alliance</option>
+						<option value="AhluwaliaP">Ahluwalia, Puneet</option>
+						<option value="ABE">Alaskans for Better Elections</option>
+						<option value="AlejosB">Alejos, Barcia</option>
+						<option value="AlfordM">Alford, Mark</option>
+						<option value="AllcornT">Allcorn, Tyler</option>
+						<option value="AFD">All For Doylestown</option>
+						<option value="AllenG">Allen, Gerald</option>
+						<option value="AllenL">Allen, Lance</option>
+						<option value="AFL">America First Legal</option>
+						<option value="AADC">American Alliance for Disabled Children</option>
+						<option value="AFoCMO">American Federation of Children (MO)</option>
+						<option value="AndersonP">Anderson, Patti</option>
+						<option value="AndersonT">Anderson, Toby</option>
+						<option value="AndreH">Andre, Hugh</option>
+						<option value="ABSS">Anthony Bucco for State Senate</option>
+						<option value="AoKC">Archdiocese of Kansas City</option>
+						<option value="ArdJ">Ard, Jason</option>
+						<option value="ArgallD">Argall, David</option>
+						<option value="ARGOP">Arkansas GOP</option>
+						<option value="ArpS">Arp, Sam</option>
+						<option value="AskarC">Askar, Casey</option>
+						<option value="AtkinsJ">Atkins, Jay</option>
+						<option value="BackerJ">Backer, Jeff</option>
+						<option value="BaldersonT">Balderson, Troy</option>
+						<option value="BangsC">Bangs, Courtney</option>
+						<option value="BarhamJ">Barham, Jerry</option>
+						<option value="BarrentineJ">Barrentine, Joeletta</option>
+						<option value="BartonB">Barton, Bridget</option>
+						<option value="BatesP">Bates, Patricia</option>
+						<option value="BaumannD">Baumann, Delor</option>
+						<option value="BaylockW">Baylock, Wilson</option>
+						<option value="BedminsterNJ">Bedminster, NJ TWP</option>
+						<option value="BellJ">Bell, Jarome</option>
+						<option value="BTREC">Bensalem Township Republican Executive Committee</option>
+						<option value="BerkowitzJ">Berkowitz, Josh</option>
+						<option value="Bequette">Bequette for Arkansas</option>
+						<option value="BerryhillJ">Berryhill, Jamie</option>
+						<option value="BiusB">Bius, Ben</option>
+						<option value="BlackD">Black, Dave for Judge (Chester Co PA)</option>
+						<option value="BlakelyJ">Blakely, James</option>
+						<option value="BledsoeG">Bledsoe, Greg</option>
+						<option value="BoggessP">Boggess, Pamela</option>
+						<option value="BondMP">Bond, Michelle</option>
+						<option value="Bradberry">Bradberry - LA Court of Appeals</option>
+						<option value="BradicaJ">Bradica, Jessie</option>
+						<option value="BradleyS">Bradley, Stormy</option>
+						<option value="BraunM">Braun, Mike</option>
+						<option value="BriggsKing">Briggs-King, Ruth</option>
+						<option value="BrooksM">Brooks, Mo</option>
+						<option value="BrooksT">Brooks, Tony</option>
+						<option value="BurkeB">Burke, Bill</option>
+						<option value="BurkeG">Burke, Geoffrey</option>
+						<option value="BurlisonE">Burlison, Eric</option>
+						<option value="BurnsB">Burns, Bob</option>
+						<option value="BurnsE">Burns, Emily</option>
+						<option value="BurnsM">Burns, Mark</option>
+						<option value="BustardA">Bustard, Art</option>
+						<option value="ButlerK">Butler, Kimberly</option>
+						<option value="ButlerM">Butler, Mack</option>
+						<option value="C4BES">California 4 Better Energy</option>
+						<option value="Calloway">Josh Calloway</option>
+						<option value="CroninCC">Cronin Cahill, Cindy</option>
+						<option value="CameronD">Cameron, Daniel</option>
+						<option value="Carematix">Carematix</option>
+						<option value="JCarl">Carl, Jerry</option>
+						<option value="CarluccioC">Carluccio, Carolyn</option>
+						<option value="CarrascoA">Carrasco, Aimee</option>
+						<option value="Carter">Carter, Buddy</option>
+						<option value="CarterV">Carter, Virginia</option>
+						<option value="CassidyE">Cassidy, Elliot</option>
+						<option value="CatalystOK">Catalyst Oklahoma</option>
+						<option value="CCNH">Catholic Charities New Hampshire</option>
+						<option value="C4IFTC">Center for Individual Freedom (Traverse City)</option>
+						<option value="CFSA">CFSA</option>
+						<option value="CGCN">CGCN</option>
+						<option value="ChadBC">Chad Boyer Campaign</option>
+						<option value="ChangLL">Chang, Ling Ling</option>
+						<option value="ChesneyA">Chesney, Andrew</option>
+						<option value="CEAoM">Children's Education Alliance of Missouri</option>
+						<option value="CiarciaG">Ciarcia, Gina</option>
+						<option value="CDV">Citizens for Dean VanSchoiack</option>
+						<option value="CFR">Citizens for Fiscal Responsibility</option>
+						<option value="CfN">Citizens for Nevada</option>
+						<option value="CfSI">Citizens for Sanity, Inc</option>
+						<option value="CitizensVID">Citizens for Voter ID</option>
+						<option value="CitizenV">Citizen Voter</option>
+						<option value="ClancyM">Clancy, Mike</option>
+						<option value="CleanUpCali">Clean Up California</option>
+						<option value="CFG">Club for Growth</option>
+						<option value="CFCG">Coalition for Clean Government</option>
+						<option value="CSE">Coalition for Secure Elections</option>
+						<option value="ColvinB">Colvin, Brock</option>
+						<option value="Comer">Comer, James</option>
+						<option value="ComptonSupervisor">Compton for Supervisor</option>
+						<option value="ConservAmerica">ConservAmerica</option>
+						<option value="CDF">Conservative Defense Fund</option>
+						<option value="CCLP">Conservative Champion Leader Political</option>
+						<option value="CookG">Cook, Greg</option>
+						<option value="Costco">Costco</option>
+						<option value="CCAGW">Council for Citizens Against Government Waste</option>
+						<option value="CousineauL">Cousineau, Lorie</option>
+						<option value="CoynerC">Coyner, Carrie</option>
+						<option value="CraftK">Craft, Kelly</option>
+						<option value="Cruz">Cruz, Ted</option>
+						<option value="CummingsR">Cummings, Rodney</option>
+						<option value="CunninghamJ">Cunningham, Jordan</option>
+						<option value="CurranM">Curran, Mark</option>
+						<option value="CurryK">Curry, Kellen</option>
+						<option value="CuteraB">Cutera, Bill</option>
+						<option value="DaceyJ">Dacey, Jennifer</option>
+						<option value="Daviess">Daviess County Prosecutor</option>
+						<option value="Dearborn">Dearborn and Ohio County Prosecutor</option>
+						<option value="DefendAK">Defend Alaska</option>
+						<option value="DTC">Defend the Constitution PAC</option>
+						<option value="DMMA">del Moral Mealer, Alexandra</option>
+						<option value="DeLuzC">DeLuz, Craig</option>
+						<option value="DCStatesman">DC Statesman</option>
+						<option value="DickinsonM">Dickinson, Mike</option>
+						<option value="Donalds">Donalds, Byron</option>
+						<option value="DonatoS">Donato, Stacey</option>
+						<option value="DCGOP">Douglas County GOP</option>
+						<option value="DowR">Dow, Rebecca</option>
+						<option value="DowningT">Downing, Troy</option>
+						<option value="DSPAC">Draft Stu PAC</option>
+						<option value="DuPageGOP">DuPage County IL GOP</option>
+						<option value="DunnA">Dunn, Aura</option>
+						<option value="EarlyE">Early, Eric</option>
+						<option value="ElectR">Elect Republicans PAC</option>
+						<option value="EPAC">Elevate PAC</option>
+						<option value="Ekhart">Elkhart County Prosecutor</option>
+						<option value="ElliottS">Elliott, Steven</option>
+						<option value="EllisA">Ellis, Aaron</option>
+						<option value="ElpersJ">Elpers, Justin</option>
+						<option value="EmpowerAmerica">Empower America</option>
+						<option value="EvansCJ">Evans, CJ</option>
+						<option value="Everest">Everest Communications</option>
+						<option value="FaulL">Faul, Laura</option>
+						<option value="FaulknerW">Faulkner, William</option>
+						<option value="FieldsJ">Fields, Janice</option>
+						<option value="FioreM">Fiore, Michele</option>
+						<option value="FFSA">Firefighters for a Safer America</option>
+						<option value="FischerD">Fischer, Deb</option>
+						<option value="Fischbach">Fischbach, Michelle</option>
+						<option value="FisherT">Fisher, Tracy</option>
+						<option value="FitchL">Fitch, Lynn</option>
+						<option value="FitzherbertB">Fitzherbert, Brian</option>
+						<option value="FixingNJ">Fixing New Jersey</option>
+						<option value="FloodM">Flood, Mike</option>
+						<option value="FloraD">Flora, Deborah</option>
+						<option value="FloresM">Flores, Mayra</option>
+						<option value="FlorioJ">Florio, Jessica</option>
+						<option value="FloydCounty">Floyd County IN Prosecutor</option>
+						<option value="FlynnF">Flynn, Fran</option>
+						<option value="FongV">Fong, Vince</option>
+						<option value="ForneyISD">Forney ISD</option>
+						<option value="ForteT">Forte, Tina</option>
+						<option value="FrancoisV">Francois, Vennia</option>
+						<option value="Frazier">Frazier, Deanna</option>
+						<option value="Freedomworks">Freedomworks</option>
+						<option value="FreedomFTX">Freedom Foundation of Texas PAC</option>
+						<option value="FreedomFTX503c">Freedom Foundation of Texas 503c</option>
+						<option value="Fleming">Fleming, Deb</option>
+						<option value="FrenchA">French, Amey</option>
+						<option value="FriendsOfCM">Friends of Carmine Marceno</option>
+						<option value="FriendsOfEC">Friends of Emily Chenevert</option>
+						<option value="FridyM">Fridy, Matt</option>
+						<option value="FowlerS">Fowler, Steven</option>
+						<option value="GarrettE">Garrett, Erin</option>
+						<option value="GullerG">Fuller, Gary</option>
+						<option value="FutureLeadersFund">Future Leaders Fund</option>
+						<option value="GardnerR">Gardner, Ryan</option>
+						<option value="GalluchD">Galluch, David</option>
+						<option value="GUVPAC">Georgia United Victory PAC</option>
+						<option value="GAFirst">Georgians First Leadership Committee</option>
+						<option value="GalassiK">Galassi, Kari</option>
+						<option value="GallagherJ">Gallagher, James</option>
+						<option value="GarciaC">Garcia, Cassie</option>
+						<option value="Garner">Garner, Trent</option>
+						<option value="GSC">Georgia Strong Committee</option>
+						<option value="GermanT">German, Tony</option>
+						<option value="GilbertJ">Gilbert,Jake</option>
+						<option value="GivhanS">Givhan, Sam</option>
+						<option value="GodingLA">Goding, Lou Ann</option>
+						<option value="GodleyISD">Godley ISD</option>
+						<option value="Gonsales">Gonsalves, Mark</option>
+						<option value="GoudeauJ">Goudeau, Jonathan</option>
+						<option value="GravesS">Graves, Sam</option>
+						<option value="GraceA">Grace, April</option>
+						<option value="GrandeM">Grande, Michael</option>
+						<option value="GranvilleE">Granville, Earl</option>
+						<option value="GreenJR">Green, Jennifer-Ruth</option>
+						<option value="GreenJ">Green, Justin</option>
+						<option value="GreenM">Green, Mark</option>
+						<option value="GrowOurParty">Grow Our Party PAC</option>
+						<option value="GuentherA">Guenther, Anthony</option>
+						<option value="GuilloryGS">Guillory, Gary Stitch</option>
+						<option value="HamiltonB">Hamilton, Bob</option>
+						<option value="HamiltonP">Hamilton, Philip</option>
+						<option value="HamiltonT">Hamilton, Tamika</option>
+						<option value="HanesT">Hanes, Tommy</option>
+						<option value="HansonA">Hanson, Aaron</option>
+						<option value="Harrison">Harrison County IN Prosecutor</option>
+						<option value="Hasso">Hasso, Nicole</option>
+						<option value="HattonJ">Hatton, Jon</option>
+						<option value="JaubertD">Haubert, David</option>
+						<option value="Hayes">Hayes, Tommy</option>
+						<option value="HeffernanJ">Heffernan, Jessica</option>
+						<option value="HelsethM">Helseth, Marla</option>
+						<option value="HendrenJ">Hendren, Jim</option>
+						<option value="HenryM">Henry, Michael</option>
+						<option value="HensonDecker">Henson Decker, Jennifer</option>
+						<option value="Hern-Franking">Hern - Franking</option>
+						<option value="Hern">Hern, Kevin</option>
+						<option value="Bart">Hester, Bart</option>
+						<option value="BrianHester">Hester, Brian</option>
+						<option value="HerzogFound">Herzog Foundation</option>
+						<option value="HewittS">Hewitt, Sharon</option>
+						<option value="HickeyC">Hickey, Colin</option>
+						<option value="HigginsC">Higgins, Clay</option>
+						<option value="HillC">Hill, Curtis</option>
+						<option value="HillG">Hill, Greg</option>
+						<option value="HinkleT">Hinkle, Trent</option>
+						<option value="HochmanN">Hochman, Nathan</option>
+						<option value="HoldcroftR">Holdcroft, Rick</option>
+						<option value="HollandJ">Holland, Justin</option>
+						<option value="H4AH">Hoosiers for Affordable Healthcare</option>
+						<option value="HoskinsD">Hoskins, Denny</option>
+						<option value="HouchinE">Houchin, Erin</option>
+						<option value="HouseCanary">House Canary</option>
+						<option value="HCF">House Conservatives Fund</option>
+						<option value="HsiehP">Hsieh, Peter</option>
+						<option value="HurdW">Hurd, Will</option>
+						<option value="WHPAC">HURD PAC</option>
+						<option value="Hyundai">Hyundai</option>
+						<option value="ILResultsNotRancor">Illinois Results Not Rancor</option>
+						<option value="INGOP">Indiana GOP</option>
+						<option value="INRTL">Indiana Right to Life</option>
+						<option value="IndianaOAG">Indiana Unclaimed</option>
+						<option value="I4QE">Institute for Quality Education</option>
+						<option value="IGF">Integrity in Government Fund</option>
+						<option value="IIDCSD">Invest in DCSD</option>
+						<option value="ISC">Iowa Senate Caucus</option>
+						<option value="JacksonCo">Jackson County IN Recorder</option>
+						<option value="JacksonR">Jackson, Ronny</option>
+						<option value="JRFM">James Roberson for Forney Mayor</option>
+						<option value="JasperCo">Jasper County Prosecutor</option>
+						<option value="JeffersonCo">Jefferson County Prosecutor's Office</option>
+						<option value="JeffersonCoGOP">Jefferson County GOP</option>
+						<option value="JerseyF">Jersey First</option>
+						<option value="JerseyRealP">Jersey Real PAC</option>
+						<option value="JewellM">Jewell, Matt</option>
+						<option value="JFaSPAC">Jobs Freedom and Security PAC</option>
+						<option value="Johnson">Johnson, Mike</option>
+						<option value="JohnsonS">Johnson, Steven (KS-Treasurer)</option>
+						<option value="JonesS">Jones, Scott</option>
+						<option value="JordanDJ">Jordan, DJ</option>
+						<option value="JoyceJ">Joyce, John</option>
+						<option value="JusticeE">Justice, Eddy</option>
+						<option value="KansasForLife">Kansas For Life</option>
+						<option value="KansasRisingPAC">Kansas Rising PAC</option>
+						<option value="KansasRenewable">Kansas Renewable Energy Coalition</option>
+						<option value="Katko">Katko, John</option>
+						<option value="KattP">Katt, Peter</option>
+						<option value="KEEP">Keep The Good Life Inc</option>
+						<option value="KelleyF">Kelley, Fred</option>
+						<option value="KellyT">Kelly, Trent</option>
+						<option value="KellyJ">Kelly, Julie</option>
+						<option value="KempB">Kemp, Brian</option>
+						<option value="Kennedy">Kennedy, Rhonda</option>
+						<option value="KnezekE">Knezek, Eric</option>
+						<option value="KerrG">Kerr, Gib</option>
+						<option value="KoolidgeM">Koolidge, Mike</option>
+						<option value="KordaasJ">Kordaas, Jessica</option>
+						<option value="KovacsJ">Kovacs, John</option>
+						<option value="Kronfeld">Kronfeld, Andy</option>
+						<option value="KwasmanA">Kwasman, Adam</option>
+						<option value="LabsS">Labs, Shelby</option>
+						<option value="LakeCoILGOP">Lake County IL GOP</option>
+						<option value="LakeCoP">Lake County Prosecutor</option>
+						<option value="LakesideComm">Lakeside Communications</option>
+						<option value="LammC">Lamm, Cindi</option>
+						<option value="LandreneauJ">Landreneau, Johanna</option>
+						<option value="LAWPAC">Law Enforcement for a Safer America</option>
+						<option value="LawrenceW">Lawrence, William</option>
+						<option value="LeavittK">Leavitt, Karoline</option>
+						<option value="LeBlancD">LeBlanc, Dean</option>
+						<option value="Lee">Lee, Mike</option>
+						<option value="LengquistC">Lengquist, Chris</option>
+						<option value="LetsWinVA">Lets Win Virginia</option>
+						<option value="LaCPAC">Lewis and Clark PAC</option>
+						<option value="LibertyAlliance">liberty Alliance USA</option>
+						<option value="LifeCenters">Life Centers</option>
+						<option value="LincolnStrat">Lincoln Strategy Group</option>
+						<option value="Linehan">Linehan, Lou Ann</option>
+						<option value="LinpetriM">Linpetri, Mike</option>
+						<option value="LittleM">Little, Mark</option>
+						<option value="LivingstonCoGOP">Livingston County GOP</option>
+						<option value="LivingstonJ">Livingston, Justin</option>
+						<option value="Lockett">Lockett, Matt</option>
+						<option value="LohseB">Lohse, Brian</option>
+						<option value="Long">Long, Billy</option>
+						<option value="LottR">Lott, Rachel</option>
+						<option value="LoudermilkB">Loudermilk, Barry</option>
+						<option value="LABI">Louisiana Association of Business & Industry</option>
+						<option value="FreeLA">Louisiana Free Enterprise</option>
+						<option value="LouisianaFC">Louisiana Freedom Caucus</option>
+						<option value="Lucas">Lucas, Frank</option>
+						<option value="MabryS">Mabry, Sarah</option>
+						<option value="MadainF">Madain Foundation</option>
+						<option value="MadisonCoPros">Madison County Indiana Prosecutor</option>
+						<option value="MakkiA">Makki, Amanda</option>
+						<option value="MarantoD">Maranto, Drew</option>
+						<option value="MarcenoC">Marceno, Carmine</option>
+						<option value="MartinB">Martin, Brandon</option>
+						<option value="MartinC">Martin, Chuck</option>
+						<option value="MaryottB">Maryott, Brian</option>
+						<option value="MassGOP">Massachusetts GOP</option>
+						<option value="Mastrangelo">Mastrangelo, Tom</option>
+						<option value="Maximus">Maximus</option>
+						<option value="McAdamsB">McAdams, Bill</option>
+						<option value="McCaneyM">McCaney, Maurice</option>
+						<option value="McCloyJ">McCloy, John</option>
+						<option value="McGraneP">McGrane, Phil</option>
+						<option value="McKnightQ">McKnight, Quincy</option>
+						<option value="McLendonF">McLendon, Floyd</option>
+						<option value="McMahonR">McMahon, Ryan</option>
+						<option value="McMainM">McMain, Marc</option>
+						<option value="McMakinD">McMakin, Dixon</option>
+						<option value="MeadowsC">Meadows, Charlotte</option>
+						<option value="DMMA">Mealer, Alexandra del Moral</option>
+						<option value="MeijerP">Meijer, Peter</option>
+						<option value="MeosonT">Melson, Tim</option>
+						<option value="MerrillJ">Merrill, John</option>
+						<option value="MerrinD">Merrin, Derek</option>
+						<option value="Messner">Messner, Bryant</option>
+						<option value="MeyersA">Meyers, Andy</option>
+						<option value="MichiganTA">Michigan Taxpayers Alliance</option>
+						<option value="MiguezB">Miguez, Blake</option>
+						<option value="MillM">Miller, Mary</option>
+						<option value="MillerS">Miller, Steve</option>
+						<option value="MillsF">Mills, Fred</option>
+						<option value="MillsRC">Mills, Robert Campaign</option>
+						<option value="MillsR">Mills, Robert</option>
+						<option value="MischlerR">Mishler, Ryan</option>
+						<option value="MSS">Missourians for Safer Streets</option>
+						<option value="MHHRCC">MN House Repub Campaign</option>
+						<option value="ModernMarkets">Modern Markets Initiative</option>
+						<option value="MooreB">Moore, Barry</option>
+						<option value="MooreT">Moore, Tyler</option>
+						<option value="Morales">Morales, Vincent</option>
+						<option value="MorganM">Morgan, Matt</option>
+						<option value="Morrison">Morrison, Tom</option>
+						<option value="MorrissD">Morriss, Doug</option>
+						<option value="Mullin">Mullin, Markwayne</option>
+						<option value="MullinSenate">Mullin, Markwayne (Senate)</option>
+						<option value="MurphyL">Murphy, Lee</option>
+						<option value="Myers,MarkfForMayor">Myers, Mark for Mayor</option>
+						<option value="NCPSOMO">National Coalition of Public School Options - Missouri</option>
+						<option value="NCPSOTX">National Coalition of Public School Options - Texas</option>
+						<option value="NPA">National Police Association</option>
+						<option value="NEFB">Nebraska Farm Bureau</option>
+						<option value="NFCPAC">Nebraska Federation for Children PAC</option>
+						<option value="NFAF">Nebraska Future Action Fund</option>
+						<option value="NEGOP">Nebraska Republican Party</option>
+						<option value="NRPP">Nebraskans for Reliable and Affordable Electricity</option>
+						<option value="Nehls">Nehls, Troy</option>
+						<option value="NCLA">New Civil Liberties Alliance</option>
+						<option value="NJIIF">New Jersey Intergovernmental Insurance Fund</option>
+						<option value="NJGOP">New Jersey Republican State Committee</option>
+						<option value="NewH">New, Heather</option>
+						<option value="Newhouse">Newhouse, Dan</option>
+						<option value="NicholsonK">Nicholson, Kevin</option>
+						<option value="NickelsonJ">Nickelson, John</option>
+						<option value="NielloR">Niello, Roger</option>
+						<option value="NoBetterFriends">No Better Friend PAC</option>
+						<option value="NohraG">Nohra, Guy</option>
+						<option value="NOMIH">NOMI Health</option>
+						<option value="NormanCoC">Norman Chamber of Commerce</option>
+						<option value="NormanR">Norman, Ralph</option>
+						<option value="NowlinE">Nowlin, Edge</option>
+						<option value="Oberweis">Oberweis, Jim</option>
+						<option value="OhioSE">Ohioans for Secure Elections</option>
+						<option value="OhioTP">Ohio Trucking PAC</option>
+						<option value="OKlahoma">Oklahoma Unite</option>
+						<option value="OKCV">Oklahomans for Conservative Values</option>
+						<option value="OglesB">Ogles, Brandon</option>
+						<option value="OConnorK">O'Connor, Kevin</option>
+						<option value="OLaughlinC">O'Laughlin, Cindy</option>
+						<option value="OperationFreeBirds">Operation Freedom Birds</option>
+						<option value="OrangeCoPros">Orange County Indiana Prosecutor</option>
+						<option value="OregonMaC">Oregon Manufactures and Commerce</option>
+						<option value="OrthodocChristan">Orthodox Christian</option>
+						<option value="OnderB">Onder, Bob</option>
+						<option value="OutstateMO">OutState MO</option>
+						<option value="ParentsSafeSchools">Parents for Safe Schools</option>
+						<option value="ParkinsonS">Parkinson, Scott</option>
+						<option value="ParrottN">Parrott, Neil</option>
+						<option value="Patrick">Patrick, Paula</option>
+						<option value="PattersonB">Patterson, Buzz</option>
+						<option value="PeakeM">Peake, Mark</option>
+						<option value="Pillen">Pillen, Jim</option>
+						<option value="PlacerCo">Placer County</option>
+						<option value="CACC">PLift (Citizens for Cannibus Corruption)</option>
+						<option value="PolinchockT">Polinchock, Todd</option>
+						<option value="PowerTheFuture">Power the Future</option>
+						<option value="PriceB">Price, Betsy</option>
+						<option value="ProjectEpworthLLC">Project Epworth, LLC</option>
+						<option value="ProsperNebraska">Prosper Nebraska</option>
+						<option value="PNTP">Protect Nevada Taxpayers PAC</option>
+						<option value="PIFGISD">Public Information For Garland ISD</option>
+						<option value="Pyon">Pyon, Harold</option>
+						<option value="raney">Raney, John</option>
+						<option value="RACP">Rare Access Action Project</option>
+						<option value="RatliffT">Ratliff, Thomas</option>
+						<option value="RazzoliM">Razzoli, Mark</option>
+						<option value="ReadyRon">Ready for Ron</option>
+						<option value="RCD">Rebuilding California Dream</option>
+						<option value="Recall">Recall Dunleavy</option>
+						<option value="RecallRavitch">Recall Ravitch</option>
+						<option value="Reed">Reed, Tom</option>
+						<option value="ReeeseM">Reese, Mike</option>
+						<option value="RRG">Remington Research Group</option>
+						<option value="RickettsP">Ricketts, Pete</option>
+						<option value="RantzG">Rantz, Gus</option>
+						<option value="RecklingM">Reckling, Meghan</option>
+						<option value="RLGPAC">Reform Local Government PAC</option>
+						<option value="RehmR">Rehm, Rick</option>
+						<option value="ReisigJ">Reisig, Jeff</option>
+						<option value="RenegarT">Renegar, Terry</option>
+						<option value="RepresentUs">Represent Us</option>
+						<option value="RepublicanAGA">Republican Attorneys General Assoc.</option>
+						<option value="RGA">Republican Governors Association</option>
+						<option value="Woodlands">Residents For The Woodlands</option>
+						<option value="RidenourD">Ridenour, Dan</option>
+						<option value="RobersonJ">Roberson, James</option>
+						<option value="RobertsD">Roberts, Dan (AL-15)</option>
+						<option value="MichelleRomero">Romero, Michelle</option>
+						<option value="Ross">Ross,Jim</option>
+						<option value="RuaisJ">Ruais, Jay</option>
+						<option value="RuffF">Ruff, Frank</option>
+						<option value="RussK">Russ, Kyle</option>
+						<option value="RussellS">Russell, Sam</option>
+						<option value="SAM-Nebraska">SAM Nebraska</option>
+						<option value="SandvigN">Sandvig, Nate</option>
+						<option value="SandsC">Sands, Carla</option>
+						<option value="SanftK">Sanft, Karll</option>
+						<option value="SaveOurBenefits">SaveOurBenefits</option>
+						<option value="STSPac">Saving the Second Pac</option>
+						<option value="ScheurenD">Scheuren, Donna</option>
+						<option value="SchillerC">Schiller, Chris</option>
+						<option value="Schmitt">Schmitt, Eric</option>
+						<option value="ScismK">Scism, Kent</option>
+						<option value="ScottT">Scott, Tim</option>
+						<option value="Scotti">Scotti, Richard</option>
+						<option value="SchlegelS">Schlegel, Scott</option>
+						<option value="SeabrookM">Seabrook, Mark</option>
+						<option value="SelenT">Selen, Tayfun</option>
+						<option value="SethiM">Sethi, Manny</option>
+						<option value="Seyring">Seyring, Gary</option>
+						<option value="ShawG">Shaw, Greg</option>
+						<option value="ShelnuttShay">Shelnutt, Shay</option>
+						<option value="SilionVBP">Silicon Valley BIZ PAC</option>
+						<option value="Skaggs">Skaggs, Kimberly</option>
+						<option value="AdrianS">Smith, Adrian</option>
+						<option value="SmithD">Smith, Darin</option>
+						<option value="SmithE">Smith, Eddie</option>
+						<option value="SmithG">Smith, Gene</option>
+						<option value="SmithT">Smith, Tim</option>
+						<option value="SmithTIn">Smith, Tim (IN-3)</option>
+						<option value="SmithV">Smith, Van</option>
+						<option value="SodhaJ">Sodha, Jennifer</option>
+						<option value="SolisI">Solis, Isabella</option>
+						<option value="SossaPJ">Sossa-Paquette, Jeffrey</option>
+						<option value="SpaldingC">Spalding, Carla</option>
+						<option value="SpanoR">Spano, Ross</option>
+						<option value="Stampede">Stampede Consulting</option>
+						<option value="StandNYPAC">Stand for New York PAC</option>
+						<option value="StaatsC">Staats, Craig</option>
+						<option value="StavrosA">Stavros, Anthony</option>
+						<option value="Stefanik">Stefanik, Elise</option>
+						<option value="StephensT">Stephens, Todd</option>
+						<option value="SteppA">Stepp, Andy</option>
+						<option value="StevensJ">Stevens, John</option>
+						<option value="Stonebridge">Stonebridge Healthcare</option>
+						<option value="SPM">Strategic Political Management</option>
+						<option value="StrahanJ">Strahan, Jennifer</option>
+						<option value="StopAndShop">Stop & Shop</option>
+						<option value="StopTheInsanity">Stop the Insanity</option>
+						<option value="Stop">Stop Stacey</option>
+						<option value="SwanR">Swan, Renee</option>
+						<option value="VirginiaGOP">Suburban Virginia GOP</option>
+						<option value="Sykes">Sykes, EC</option>
+						<option value="TaylorF">Taylor, Frances</option>
+						<option value="TPP">Tea Party Patriots</option>
+						<option value="TRSC">Tenneessee Republican Senate Caucus</option>
+						<option value="TAC">Texas Association of Counties</option>
+						<option value="TCA">Texas Construction Association</option>
+						<option value="TexasDOT">Texas DOT</option>
+						<option value="TFC">Texas First Coalition</option>
+						<option value="ThatcherK">Thatcher, Kim</option>
+						<option value="TAPO">The American Pops Orchestra</option>
+						<option value="TCPAC">The Commonwealth Pac</option>
+						<option value="TdtPAC">The Dinner Table PAC</option>
+						<option value="DriestD">The Driest Drywall Company</option>
+						<option value="TFAS">The Fund for American Studies</option>
+						<option value="GoodParty">The Good Party</option>
+						<option value="Prosper">The Prosper Group</option>
+						<option value="ThomasL">Thomas, Lisa</option>
+						<option value="ThomasSB">Thomas, Sharon Breckinridge</option>
+						<option value="TiffanyT">Tiffany, Tom</option>
+						<option value="TogetherN">Together Nebraska</option>
+						<option value="TomlinsonKC">Tomlinson, KC</option>
+						<option value="TooRiskyPAC">Too Risky PAC</option>
+						<option value="Transform">Transformative Healthcare</option>
+						<option value="TAPAC">True Americans PAC</option>
+						<option value="TrueTheVote">True the Vote</option>
+						<option value="TruthCourage">Truth and Courage PAC</option>
+						<option value="TruthOK">Truth for Oklahoma PAC</option>
+						<option value="TruthInPolitics">Truth in Politics</option>
+						<option value="TubervilleT">Tuberville, Tommy</option>
+						<option value="UkraineStrongPAC">Ukraine Strong PAC</option>
+						<option value="UNFI">UNFI</option>
+						<option value="UniteTheFightPAC">Unite the Fight PAC</option>
+						<option value="USA">USA Freedom Fund</option>
+						<option value="USDA">USDA</option>
+						<option value="UTAComcast">Utah Tas Association - Comcast</option>
+						<option value="ValentinL">Valentin, Leo</option>
+						<option value="ValueThemBoth">Value Them Both</option>
+						<option value="VanderWaalH">VanderWaal, Heidi</option>
+						<option value="Vanguard">Vanguard Field Strategies</option>
+						<option value="VirginiaCitizenDefense">Virginia Citizens Defense League</option>
+						<option value="VirginiaFreee">Virginia Free</option>
+						<option value="VogesB">Voges, Brandon</option>
+						<option value="VYGISD">Vote Yes Garland ISD</option>
+						<option value="WagnerA">Wagner, Ann</option>
+						<option value="Walberg">Walberg, Tim</option>
+						<option value="WalkerM">Walker, Lee (Mac)</option>
+						<option value="Walker">Walker, Mark</option>
+						<option value="waltz">Waltz, Michael</option>
+						<option value="Wardynski">Wardynski, Casey</option>
+						<option value="WashCo">Washington County</option>
+						<option value="WaymasterT">Waymaster, Troy</option>
+						<option value="Weaver">Weaver, April</option>
+						<option value="WebertM">Webert, Michael</option>
+						<option value="WilkS">Wilk, Scott</option>
+						<option value="WilliamsC">Williams, Cordie</option>
+						<option value="WilliamsJJ">Williams, James Jimbo</option>
+						<option value="Williams">Williams, Roger</option>
+						<option value="WhitakerM">Whitaker, Matt</option>
+						<option value="RepWittman">Wittman, Rob</option>
+						<option value="WhiteR">White, Richard</option>
+						<option value="Welch">Welch, Richard</option>
+						<option value="WelshE">Welsh, Eric</option>
+						<option value="WesHixon">Wes Hixon's Outdoor Adventure</option>
+						<option value="WoodJ">Wood, Joseph</option>
+						<option value="YanceyD">Yancey, Dan</option>
+						<option value="YarbroughE">Yarbrough, Ernie</option>
+						<option value="YoungB">Young, Barbara</option>
+						<option value="ZubeldiaD">Zubeldia, Derek</option>
+					</select>
+				</div>
+				<!-- Client Name end -->
+				<!-- Agency start -->
+				<div class="col-md-4 mb-4">
+					<label class="form-label col-12" for="organization">Organization</label>
+					<select name="organization" id="organization" class="form-select col" aria-label="Organization" data-bind="value: organization">
+						<option value="PG" selected>Prosper</option>
+						<option value="Everst">Everest</option>
+					</select>
+				</div>
+				<!-- Agency end -->
+				<!-- Campaign Type start -->
+				<div class="col-md-4 mb-4">
+					<label class="form-label col-12" for="campaignType">Campaign Type</label>
+					<select name="campaignType" id="campaignType" class="form-select col" aria-label="Campaign Type" data-bind="value: campaignType">
+						<option value="CONV" selected>Conversion</option>
+						<option value="TRAF">Traffic</option>
+						<option value="ENG">Engagement</option>
+						<option value="BA">Brand Awareness</option>
+						<option value="REACH">Reach</option>
+					</select>
+				</div>
+				<!-- Campaign Type end -->
+				<!-- Optimization Type start -->
+				<div class="col-md-4 mb-4">
+					<label class="form-label col-12" for="optimizationType">Optimization Type</label>
+					<select name="optimizationType" id="optimizationType" class="form-select col" aria-label="Optimization Type" data-bind="value: optimizationType">
+						<option value="PUR" selected>Purchase</option>
+						<option value="LEAD">Lead</option>
+						<option value="ENG">Engagement</option>
+						<option value="LC">Link Clicks</option>
+						<option value="IMP">Impressions</option>
+						<option value="LPV">Landing Page View</option>
+					</select>
+				</div>
+				<!-- Optimization Type end -->
+				<!-- Tartgeting Method start -->
+				<div class="col-md-4 mb-4">
+					<label class="form-label col-12" for="targetingMethod">Targeting Method</label>
+					<select name="targetingMethod" id="targetingMethod" class="form-select col" aria-label="Targeting Method" data-bind="value: targetMethod">
+						<option value="INT" selected>Interest</option>
+						<option value="AUD">3P Audience</option>
+						<option value="IP">IP Targeting</option>
+						<option value="FILE">File(s)</option>
+						<option value="OPEN">Open Targeting</option>
+						<option value="DEMO">Demographic (All + YT)</option>
+						<option value="CONPAK">Contextual Pack (All + YT)</option>
+						<option value="Keyword">Keyword (Search)</option>
+						<option value="Topic">Topic (Search)</option>
+					</select>
+				</div>
+				<!-- Targeting Method end -->
+				<!-- Geo start -->
+				<div class="col-md-4 mb-5">
+					<label for="geo" class="form-label col-12">Geo</label>
+					<input type="text" name="geo" id="geo" class="form-control col-12" placeholder="" data-bind="value: geo">
+				</div>
+				<!-- Geo end -->
+				</div>
+				<!-- row end-->
+				<div class="row displayUrlGroup">
+				<div class="col-12 col-md-6 mb-3">
+					<div class="card text-bg-secondary" id="taskNamingPanel" data-bind="css: { 'text-bg-secondary': !goodTaskNameState(), 'text-bg-success': goodTaskNameState() }">
+						<div class="card-header">
+							<p>Accelo Trafficking Tasks</p>
+						</div>
+						<div class="card-body">
+							<strong>Tasks:</strong>
+							<div data-bind="foreach: $root.generateTaskNames">
+							<ul>
+								<li style="list-style:none;" data-bind="text: $data" class="copyClipboard"></li>
+							</ul>
+							</div>
+							<strong style="text-decoration: none;font-size: 10px;">Notes:</strong> <strong style="text-decoration: none;font-size: 10px;">  </strong>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 mb-3">
+					<div class="card text-bg-secondary" id="landingPagePanel" data-bind="css: { 'text-bg-secondary': !goodPagenameState(), 'text-bg-success': goodPagenameState() }">
+						<div class="card-header">
+							<p>Landing Pages, Texting and Email Sends</p>
+						</div>
+						<div class="card-body">
+							<strong>Name:</strong>
+							<div data-bind="foreach: $root.generatePageNames">
+							<ul>
+								<li style="list-style:none;" data-bind="text: $data" class="copyClipboard"></li>
+							</ul>
+							</div>
+							<strong style="text-decoration: none;font-size: 10px;">Key:</strong> 
+							<strong style="text-decoration: none;font-size: 10px;">Agency_Medium_ContentName_UniqueValue_TodaysDate_Ver</strong>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 mb-3">
+					<div class="card text-bg-secondary" id="namingConventionPanel" data-bind="css: { 'text-bg-secondary': !checkNamingConventionDep(), 'text-bg-success': checkNamingConventionDep() }">
+						<div class="card-header">
+							<p>Ad Platform Naming Convention</p>
+						</div>
+						<div class="card-body" data-bind="foreach: $root.platforms">
+							<div data-bind="if: $data === 'Facebook'">
+							<strong>Facebook</strong>
+							<strong>Camp:</strong>
+							<ul>
+								<li class="copyClipboard" class="copy-text" style="list-style: none;" data-bind="text: '' + $root.objective() + '_' + $data + '_' + $root.fbCampaignType()"></li>
+							</ul>
+							<strong>AdSet:</strong>
+							<span class="copyClipboard" style="list-style: none;" data-bind="text: $root.optimizationType() + '_' + $root.targetMethod() + '_' + $root.cleanAudience()+ '_' + $root.cleanGeo()"></span>
+							<strong>Ad:</strong>
+							<span  class="copyClipboard" style="list-style: none;" data-bind="text: $root.fbCreativeLine()"></span><br><br>
+							</div>
+							<div data-bind="if: $data === 'DSP'">
+							<strong>DSP</strong>
+							<strong>Line Item:</strong>
+							<span class="copyClipboard" data-bind="text: $root.client()  + '_' + $root.dspMedium()  + '_' + $root.objective() + '_' + $root.cleanAudience() + '_' + $root.cleanGeo()+ '_' + $root.curYear() + '_[1234]'"></span><br><br>
+							<strong>Group:</strong>
+							<span class="copyClipboard" data-bind="text: $root.client()  + '_' + $root.dspMedium()  + '_' + $root.objective() + '_' + $root.cleanAudience() + '_' + $root.cleanGeo()+ '_'+ $root.curYear()+'_[1234]'"></span>
+							<strong>Tactic:</strong>
+							<span class="copyClipboard" data-bind="text: $root.client()  + '_' +$root.dspMedium() + '_' + $root.cleanAudience() + '_' + $root.cleanGeo() + '_[CREATIVEDETAILS]'"></span>
+							<strong>Creative:</strong>
+							<span  class="copyClipboard" data-bind="text: $root.dspCreativeLine()"></span><br><br>
+							</div>
+							<div data-bind="if: $data === 'XANDR'">
+							<strong>XANDR</strong>
+							<strong>IO:</strong>
+							<span class="copyClipboard" data-bind="text: $root.client()  + '_' + $root.dspMedium()  + '_' + $root.objective() + '_' + $root.cleanAudience() + '_' + $root.cleanGeo()+ '_'+$root.curYear()+'_[1234]'"></span>
+							<strong>LI:</strong>
+							<span class="copyClipboard" data-bind="text: $root.client()  + '_' +$root.dspMedium() + '_' + $root.cleanAudience() + '_' + $root.cleanGeo() + '_[CREATIVEDETAILS]'"></span>
+							<strong>Creative:</strong>
+							<span  class="copyClipboard" data-bind="text: $root.xandrCreativeLine()"></span> 
+							<strong>Split:</strong>
+							<span class="copyClipboard" data-bind="text: $root.client()  + '_' + $root.cleanAudience() + '_' + $root.cleanGeo() + '_[EXCH]_[DEVICES]'"></span><br><br>
+							</div>
+							<div data-bind="if: $data === 'Adwords'">
+							<strong>Adwords</strong>
+							<strong>Campaign:</strong>
+							<!-- ko if: $root.googleAdGroupMedium() == 'Search' -->  
+							<span class="copyClipboard" data-bind="text: $root.googleObjective()  + '_' + $root.googleMedium() + '_' + $root.googleOptimizationType() + '_' +$root.cleanGeo() + '_'+$root.curYear()+'_[1234]_[DETAILS]'"></span>
+							<!-- /ko -->
+							<!-- ko if: $root.googleAdGroupMedium() == 'Video' -->  
+							<span class="copyClipboard" data-bind="text: $root.googleObjective()  + '_' + $root.googleMedium() + '_' + $root.googleOptimizationType() + '_' +$root.cleanGeo() + '_'+$root.curYear()+'_[1234]_'+ $root.cleanAudience() +'_[Skip/NonSkip]'"></span>
+							<!-- /ko -->
+							<strong>Ad Group:</strong>
+							<!-- ko if: $root.googleAdGroupMedium() == 'Search' --> 
+							<span  class="copyClipboard" data-bind="text: $root.googleAdGroupMedium() + '_' + $root.googleTargetMethod() +'_' + $root.cleanCreative()"></span>
+							<!-- /ko -->
+							<!-- ko if: $root.googleAdGroupMedium() == 'Video' --> 
+							<span  class="copyClipboard" data-bind="text: $root.googleAdGroupMedium() + '_' + $root.googleTargetMethod() +'_' + $root.cleanAudience() + '_' +$root.cleanGeo() + '_[Skip/NonSkip]'"></span>
+							<!-- /ko -->
+							<!-- ko if: $root.googleAdGroupMedium() == 'Video' --> 
+							<strong data-bind="text: $root.medium"></strong>
+							<span  class="copyClipboard" data-bind="text: $root.googleAdGroupMedium() + '_' + $root.cleanCreative() + '_[LEN]'"></span><br><br>
+							<!-- /ko -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 mb-3">
+					<div id="urlPanel" class="card text-bg-secondary" data-bind="css: { 'text-bg-secondary': !goodState(), 'text-bg-success': goodState() }">
+						<div class="card-header">Final URL(s)</div>
+						<div data-bind="foreach: platforms" class="card-body">
+							<div class="row">
+							<div class="col-12"><a target="_blank" href="" data-bind="html: ($root.finalUrlColoredFront()) + $data + ($root.finalUrlColoredBack()), attr: { href: ($root.finalUrlFront()) + $data + ($root.finalUrlBack()), }"></a>
+							</div>
+							<br><br>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+			</form>
+		</div>
 
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/context-highlight.css">
+		</section>
+		<div class="lower-lines"></div>
+		</div>
+	</main>  
 
-    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
-    <script type="text/javascript" src="js/knockout-3.4.0.min.js"></script>
-  </head>
-  <body>
-    
-    <main>
-        <div class="border-container py-5">
-          <div class="upper-lines"></div>
-          <section class="container py-5">
-              <div class="row py-5">
-                <div class="col-7 col-md-8 col-lg-10 d-flex align-items-center">
-                  <div class="row">
-                    <div class="col-10 col-md-6 col-lg-4">
-                      <img src="https://raw.githubusercontent.com/ian0043/namr-test/main/assets/namr-logo.png" alt="Prosper Group Logo" class="img-fluid">
-                    </div>
-                  </div>
-                </div>
-                <div class="col-5 col-md-4 col-lg-2">
-                  <div class="legends">
-                    <p class="adOps">AdOps Related</p>
-                    <p class="accounts">Accounts Related</p>
-                  </div>
-                </div>
-              </div>
-          </section>
-          <section class="container">
-            <form action="">
-              <div class="row mb-4">
-                <div class="col-12">
-                  <label for="contentName" class="form-label">Content Name</label>
-                  <input type="text" name="contentName" id="contentName" class="form-control" placeholder="Hi I'm NAMr! What do you want to call your piece of content?" data-bind="value: creative">
-                </div>
-              </div>
-
-              <div class="row mb-4"><!--upper options -->
-                <div class="col-12 col-sm-4"><!--ps-sm-0-->
-                  <label class="form-label" for="tactic">Tactic<span>*</span></label>
-                  <select name="tactic" id="tactic" class="form-select" aria-label="Tactic" data-bind="value: appeal">
-                    <option value="na" selected>&nbsp;</option>
-                    <option value="Deadline">Urgent Deadline</option>
-                    <option value="Issue">Issue Based Appeal</option>
-                    <option value="Attack">Attack Democrat</option>
-                    <option value="Defend">Defend Republican</option>
-                    <option value="Other">Other Camp Ask</option>
-                    <option value="Engagement">Engagement Pol/Petition</option>
-                    <option value="Signer">Special Guest Signer</option>
-                    <option value="Funding">Funding Tangible Items</option>
-                    <option value="Update">Campaign Polling/Fundraising Update</option>
-                    <option value="Other">Other</option>
-                  </select>
-                </div>
-                <div class="col-12 col-sm-4">
-                  <label class="form-label" for="topic">Topic<span>*</span></label>
-                  <select name="topic" id="topic" class="form-select" aria-label="Topic" data-bind="value: issues">
-                    <option value="na" selected>&nbsp;</option>
-                    <option value="*">*</option>
-                    <option value="AgRural">Ag/Rural</option>
-                    <option value="BigTech">BigTech</option>
-                    <option value="BreakingNews">Breaking News OTD</option>
-                    <option value="Campaign">Campaign Messaging</option>
-                    <option value="COVID">COVID</option>
-                    <option value="CriminalJustice">Criminial Justice</option>
-                    <option value="CultureWar">Culture War/Woke/Viral</option>
-                    <option value="Economy">Economy</option>
-                    <option value="Education">Education</option>
-                    <option value="Energy">Energy Independence</option>
-                    <option value="Immigration">Immigration</option>
-                    <option value="Local">Local Issues</option>
-                    <option value="Majority">Majority</option>
-                    <option value="NatSecurity">National Security/Military</option>
-                    <option value="Pro-Life">Pro-Life</option>
-                    <option value="Pro-2A">Pro-2A</option>
-                    <option value="SupremeCourt">Supreme Court</option>
-                    <option value="Holiday">Holiday</option>
-                    <option value="Other">OTHER</option>
-                  </select>
-                </div>
-                <div class="col-12 col-sm-4"><!--pe-sm-0-->
-                  <label class="form-label" for="tone">Tone<span>*</span></label>
-                  <select name="tone" id="tone" class="form-select" aria-label="Tone" data-bind="value: subissues, options: $root.generateSubIssue">
-                    
-                  </select>
-                </div>
-              </div>
-
-              <div class="row mb-4">
-                <div class="col-12">
-                  <label for="landingPageUrl" class="form-label">Landing Page URL</label>
-                  <input type="text" name="landingPageUrl" id="landingPageUrl" class="form-control" placeholder="https://www.pg.com">
-                </div>
-              </div>
-              
-              <div class="row mb-4">
-                <p class=""><strong>Platform</strong>(Source)</p>
-                <div class="checkBoxContainer col-12 d-sm-flex flex-wrap flex-column flex-sm-row">
-                  <label class="form-check form-check-label col" for="facebook">
-                    <input type="checkbox" class="form-check-input" id="facebook" value="Facebook" data-bind="checked: platforms">
-                    Facebook
-                  </label>
-
-                  <label class="form-check form-check-label col" for="basis">
-                    <input type="checkbox" class="form-check-input" id="basis" value="DSP" data-bind="checked: platforms">
-                    Basis
-                  </label>
-
-                  <!-- <label class="form-check form-check-label col" for="xandr">
-                    <input type="checkbox" class="form-check-input" id="xandr" value="XANDR" data-bind="checked: platforms">
-                    Xandr
-                  </label> -->
-
-                  <label class="form-check form-check-label col" for="google">
-                    <input type="checkbox" class="form-check-input" id="google" value="Adwords" data-bind="checked: platforms">
-                    Google
-                  </label>
-
-                  <label class="form-check form-check-label col" for="emailHouse">
-                    <input type="checkbox" class="form-check-input" id="emailHouse" value="E-HouseFile" data-bind="checked: platforms">
-                    Email House
-                  </label>
-
-                  <label class="form-check form-check-label col" for="shortCodeHouse">
-                    <input type="checkbox" class="form-check-input" id="shortCodeHouse" value="SC-HouseFile" data-bind="checked: platforms">
-                    Shortcode House
-                  </label>
-
-                  <label class="form-check form-check-label col" for="p2pHouse">
-                    <input type="checkbox" class="form-check-input" id="p2pHouse" value="P2P-HouseFile" data-bind="checked: platforms">
-                    P2P House
-                  </label>
-
-                  <label class="form-check form-check-label col" for="revShare">
-                    <input type="checkbox" class="form-check-input" id="revShare" value="RevShare" data-bind="checked: platforms">
-                    Rev Share
-                  </label>
-
-                  <label class="form-check form-check-label col" for="listRentals">
-                    <input type="checkbox" class="form-check-input" id="listRentals" value="ListRental" data-bind="checked: platforms">
-                    List Rentals
-                  </label>
-
-                  <label class="form-check form-check-label col" for="snap">
-                    <input type="checkbox" class="form-check-input" id="snap" value="Snap" data-bind="checked: platforms">
-                    Snap
-                  </label>
-
-                  <label class="form-check form-check-label col" for="linkedIn">
-                    <input type="checkbox" class="form-check-input" id="linkedIn" value="LinkedIn" data-bind="checked: platforms">
-                    LinkedIn
-                  </label>
-
-                  <label class="form-check form-check-label col" for="link">
-                    <input type="checkbox" class="form-check-input" id="link" value="Link" data-bind="checked: platforms">
-                    Link
-                  </label>
-
-                  <label class="form-check form-check-label col" for="twitter">
-                    <input type="checkbox" class="form-check-input" id="twitter" value="Twitter" data-bind="checked: platforms">
-                    Twitter
-                  </label>
-
-                </div><!--checkboxcontainer end-->
-              </div>
-
-              <div class="row mb-4"><!--lower options -->
-                <div class="col-12 col-sm-4"><!--ps-sm-0-->
-                  <label class="form-label col-12" for="campaignObjective">Campaign Objective</label>
-                  <select name="campaignObjective" id="campaignObjective" class="form-select col" aria-label="Campaign Objective" data-bind="value: objective">
-                    <option value="FR" selected>Fundraising</option> 
-                    <option value="ACQ">Acquisition</option>
-                    <option value="PER">Persuasion</option>
-                    <option value="MOB">Mobilization</option>
-                    <option value="SOC">Social Post</option>
-                  </select>
-                </div>
-                <div class="col-12 col-sm-4">
-                  <label class="form-label col-12" for="mediaType">Media Type</label>
-                  <select name="mediaType" id="mediaType" class="form-select col" aria-label="Media Type" data-bind="value: medium">
-                    <option value="" selected></option>
-                    <option value="Motion_Graphic">Motion Graphic</option>
-                    <option value="Static_Graphic">Static Graphic</option>
-                    <option value="Video">Video</option>
-                    <option value="Social">Social Post</option>
-                    <option value="Search">Search</option>
-                    <option value="Email">Email</option>
-                    <option value="SMS">SMS</option>
-                    <option value="MMS">MMS</option>
-                    <option value="Audio">Audio</option>
-                    <option value="Redirect">Redirect</option>
-                    <option value="Filter">Filter</option>
-                  </select>
-                </div>
-                <div class="col-12 col-sm-4"><!--pe-sm-0-->
-                  <label class="form-label col-12" for="fundraisingAmount">Fundraising Amount</label>
-                  <select name="fundraisingAmount" id="fundraisingAmount" class="form-select col" aria-label="Fundraising Amount" data-bind="value: amount">
-                    <option value="na" selected>N/A</option>
-							      <option value="amount=">Amount=</option>
-                  </select>
-                </div>
-              </div>
-              <div class="row mb-4">
-                <div class="col-12 col-sm-4">
-                  <label for="audienceName" class="form-label col-12">Audience Name</label>
-                  <input type="text" name="audienceName" id="audienceName" class="form-control col-12" placeholder="" data-bind="value: audience">
-                </div>
-
-                <div class="col-12 col-sm-4">
-                  <label class="form-label col-12" for="clientName">Client Name</label>
-                  <select name="clientName" id="clientName" class="form-select col" aria-label="Client Name" data-bind="value: client">
-                    <option value="" selected></option>
-                    <option value="AAF">AAF (via Comcast)</option>
-                    <option value="Adkins">Adkins, Amanda</option>
-                    <option value="AdvancingFlorida">Advancing Florida</option>							
-                    <option value="AffordableEnergy">Affordable Energy Alliance</option>
-                    <option value="AhluwaliaP">Ahluwalia, Puneet</option>
-                    <option value="ABE">Alaskans for Better Elections</option>
-                    <option value="AlejosB">Alejos, Barcia</option>
-                    <option value="AlfordM">Alford, Mark</option>
-                    <option value="AllcornT">Allcorn, Tyler</option>
-                    <option value="AFD">All For Doylestown</option>
-                    <option value="AllenG">Allen, Gerald</option>
-                    <option value="AllenL">Allen, Lance</option>
-                    <option value="AFL">America First Legal</option>
-                    <option value="AADC">American Alliance for Disabled Children</option>
-                    <option value="AFoCMO">American Federation of Children (MO)</option>
-                    <option value="AndersonP">Anderson, Patti</option>
-                    <option value="AndersonT">Anderson, Toby</option>
-                    <option value="AndreH">Andre, Hugh</option>
-                    <option value="ABSS">Anthony Bucco for State Senate</option>
-                    <option value="AoKC">Archdiocese of Kansas City</option>
-                    <option value="ArdJ">Ard, Jason</option>
-                    <option value="ArgallD">Argall, David</option>
-                    <option value="ARGOP">Arkansas GOP</option>
-                    <option value="ArpS">Arp, Sam</option>
-                    <option value="AskarC">Askar, Casey</option>
-                    <option value="AtkinsJ">Atkins, Jay</option>
-                    <option value="BackerJ">Backer, Jeff</option>
-                    <option value="BaldersonT">Balderson, Troy</option>
-                    <option value="BangsC">Bangs, Courtney</option>
-                    <option value="BarhamJ">Barham, Jerry</option>
-                    <option value="BarrentineJ">Barrentine, Joeletta</option>
-                    <option value="BartonB">Barton, Bridget</option>
-                    <option value="BatesP">Bates, Patricia</option>
-                    <option value="BaumannD">Baumann, Delor</option>
-                    <option value="BaylockW">Baylock, Wilson</option>
-                    <option value="BedminsterNJ">Bedminster, NJ TWP</option>
-                    <option value="BellJ">Bell, Jarome</option>
-                    <option value="BTREC">Bensalem Township Republican Executive Committee</option>
-                    <option value="BerkowitzJ">Berkowitz, Josh</option>
-                    <option value="Bequette">Bequette for Arkansas</option>
-                    <option value="BerryhillJ">Berryhill, Jamie</option>
-                    <option value="BiusB">Bius, Ben</option>
-                    <option value="BlackD">Black, Dave for Judge (Chester Co PA)</option>
-                    <option value="BlakelyJ">Blakely, James</option>
-                    <option value="BledsoeG">Bledsoe, Greg</option>
-                    <option value="BoggessP">Boggess, Pamela</option>
-                    <option value="BondMP">Bond, Michelle</option>
-                    <option value="Bradberry">Bradberry - LA Court of Appeals</option>
-                    <option value="BradicaJ">Bradica, Jessie</option>
-                    <option value="BradleyS">Bradley, Stormy</option>
-                    <option value="BraunM">Braun, Mike</option>
-                    <option value="BriggsKing">Briggs-King, Ruth</option>
-                    <option value="BrooksM">Brooks, Mo</option>
-                    <option value="BrooksT">Brooks, Tony</option>
-                    <option value="BurkeB">Burke, Bill</option>
-                    <option value="BurkeG">Burke, Geoffrey</option>
-                    <option value="BurlisonE">Burlison, Eric</option>
-                    <option value="BurnsB">Burns, Bob</option>
-                    <option value="BurnsE">Burns, Emily</option>
-                    <option value="BurnsM">Burns, Mark</option>
-                    <option value="BustardA">Bustard, Art</option>
-                    <option value="ButlerK">Butler, Kimberly</option>
-                    <option value="ButlerM">Butler, Mack</option>
-                    <option value="C4BES">California 4 Better Energy</option>
-                    <option value="Calloway">Josh Calloway</option>
-                    <option value="CroninCC">Cronin Cahill, Cindy</option>
-                    <option value="CameronD">Cameron, Daniel</option>
-                    <option value="Carematix">Carematix</option>
-                    <option value="JCarl">Carl, Jerry</option>
-                    <option value="CarluccioC">Carluccio, Carolyn</option>
-                    <option value="CarrascoA">Carrasco, Aimee</option>
-                    <option value="Carter">Carter, Buddy</option>
-                    <option value="CarterV">Carter, Virginia</option>
-                    <option value="CassidyE">Cassidy, Elliot</option>
-                    <option value="CatalystOK">Catalyst Oklahoma</option>
-                    <option value="CCNH">Catholic Charities New Hampshire</option>
-                    <option value="C4IFTC">Center for Individual Freedom (Traverse City)</option>
-                    <option value="CFSA">CFSA</option>
-                    <option value="CGCN">CGCN</option>
-                    <option value="ChadBC">Chad Boyer Campaign</option>
-                    <option value="ChangLL">Chang, Ling Ling</option>
-                    <option value="ChesneyA">Chesney, Andrew</option>
-                    <option value="CEAoM">Children's Education Alliance of Missouri</option>
-                    <option value="CiarciaG">Ciarcia, Gina</option>
-                    <option value="CDV">Citizens for Dean VanSchoiack</option>
-                    <option value="CFR">Citizens for Fiscal Responsibility</option>
-                    <option value="CfN">Citizens for Nevada</option>
-                    <option value="CfSI">Citizens for Sanity, Inc</option>
-                    <option value="CitizensVID">Citizens for Voter ID</option>
-                    <option value="CitizenV">Citizen Voter</option>
-                    <option value="ClancyM">Clancy, Mike</option>
-                    <option value="CleanUpCali">Clean Up California</option>
-                    <option value="CFG">Club for Growth</option>
-                    <option value="CFCG">Coalition for Clean Government</option>
-                    <option value="CSE">Coalition for Secure Elections</option>
-                    <option value="ColvinB">Colvin, Brock</option>
-                    <option value="Comer">Comer, James</option>
-                    <option value="ComptonSupervisor">Compton for Supervisor</option>
-                    <option value="ConservAmerica">ConservAmerica</option>
-                    <option value="CDF">Conservative Defense Fund</option>
-                    <option value="CCLP">Conservative Champion Leader Political</option>
-                    <option value="CookG">Cook, Greg</option>
-                    <option value="Costco">Costco</option>
-                    <option value="CCAGW">Council for Citizens Against Government Waste</option>
-                    <option value="CousineauL">Cousineau, Lorie</option> 
-                    <option value="CoynerC">Coyner, Carrie</option>
-                    <option value="CraftK">Craft, Kelly</option>
-                    <option value="Cruz">Cruz, Ted</option>
-                    <option value="CummingsR">Cummings, Rodney</option>
-                    <option value="CunninghamJ">Cunningham, Jordan</option>
-                    <option value="CurranM">Curran, Mark</option>
-                    <option value="CurryK">Curry, Kellen</option>
-                    <option value="CuteraB">Cutera, Bill</option>
-                    <option value="DaceyJ">Dacey, Jennifer</option>
-                    <option value="Daviess">Daviess County Prosecutor</option>
-                    <option value="Dearborn">Dearborn and Ohio County Prosecutor</option>
-                    <option value="DefendAK">Defend Alaska</option>
-                    <option value="DTC">Defend the Constitution PAC</option>
-                    <option value="DMMA">del Moral Mealer, Alexandra</option>
-                    <option value="DeLuzC">DeLuz, Craig</option>
-                    <option value="DCStatesman">DC Statesman</option>
-                    <option value="DickinsonM">Dickinson, Mike</option>
-                    <option value="Donalds">Donalds, Byron</option>
-                    <option value="DonatoS">Donato, Stacey</option>
-                    <option value="DCGOP">Douglas County GOP</option>
-                    <option value="DowR">Dow, Rebecca</option>
-                    <option value="DowningT">Downing, Troy</option>
-                    <option value="DSPAC">Draft Stu PAC</option>
-                    <option value="DuPageGOP">DuPage County IL GOP</option>
-                    <option value="DunnA">Dunn, Aura</option>
-                    <option value="EarlyE">Early, Eric</option>
-                    <option value="ElectR">Elect Republicans PAC</option>
-                    <option value="EPAC">Elevate PAC</option>
-                    <option value="Ekhart">Elkhart County Prosecutor</option>
-                    <option value="ElliottS">Elliott, Steven</option>
-                    <option value="EllisA">Ellis, Aaron</option>
-                    <option value="ElpersJ">Elpers, Justin</option>
-                    <option value="EmpowerAmerica">Empower America</option>
-                    <option value="EvansCJ">Evans, CJ</option>
-                    <option value="Everest">Everest Communications</option>
-                    <option value="FaulL">Faul, Laura</option>
-                    <option value="FaulknerW">Faulkner, William</option>
-                    <option value="FieldsJ">Fields, Janice</option>
-                    <option value="FioreM">Fiore, Michele</option>
-                    <option value="FFSA">Firefighters for a Safer America</option>
-                    <option value="FischerD">Fischer, Deb</option>
-                    <option value="Fischbach">Fischbach, Michelle</option>
-                    <option value="FisherT">Fisher, Tracy</option>
-                    <option value="FitchL">Fitch, Lynn</option>
-                    <option value="FitzherbertB">Fitzherbert, Brian</option>
-                    <option value="FixingNJ">Fixing New Jersey</option>
-                    <option value="FloodM">Flood, Mike</option>
-                    <option value="FloraD">Flora, Deborah</option>
-                    <option value="FloresM">Flores, Mayra</option>
-                    <option value="FlorioJ">Florio, Jessica</option>
-                    <option value="FloydCounty">Floyd County IN Prosecutor</option>
-                    <option value="FlynnF">Flynn, Fran</option>
-                    <option value="FongV">Fong, Vince</option>
-                    <option value="ForneyISD">Forney ISD</option>
-                    <option value="ForteT">Forte, Tina</option>
-                    <option value="FrancoisV">Francois, Vennia</option>
-                    <option value="Frazier">Frazier, Deanna</option>
-                    <option value="Freedomworks">Freedomworks</option>
-                    <option value="FreedomFTX">Freedom Foundation of Texas PAC</option>
-                    <option value="FreedomFTX503c">Freedom Foundation of Texas 503c</option>
-                    <option value="Fleming">Fleming, Deb</option>
-                    <option value="FrenchA">French, Amey</option>
-                    <option value="FriendsOfCM">Friends of Carmine Marceno</option>
-                    <option value="FriendsOfEC">Friends of Emily Chenevert</option>							
-                    <option value="FridyM">Fridy, Matt</option>
-                    <option value="FowlerS">Fowler, Steven</option>
-                    <option value="GarrettE">Garrett, Erin</option>
-                    <option value="GullerG">Fuller, Gary</option>
-                    <option value="FutureLeadersFund">Future Leaders Fund</option>							
-                    <option value="GardnerR">Gardner, Ryan</option>
-                    <option value="GalluchD">Galluch, David</option>
-                    <option value="GUVPAC">Georgia United Victory PAC</option>
-                    <option value="GAFirst">Georgians First Leadership Committee</option>
-                    <option value="GalassiK">Galassi, Kari</option>
-                    <option value="GallagherJ">Gallagher, James</option>
-                    <option value="GarciaC">Garcia, Cassie</option>
-                    <option value="Garner">Garner, Trent</option>
-                    <option value="GSC">Georgia Strong Committee</option>
-                    <option value="GermanT">German, Tony</option>
-                    <option value="GilbertJ">Gilbert,Jake</option>
-                    <option value="GivhanS">Givhan, Sam</option>
-                    <option value="GodingLA">Goding, Lou Ann</option>
-                    <option value="GodleyISD">Godley ISD</option>
-                    <option value="Gonsales">Gonsalves, Mark</option>
-                    <option value="GoudeauJ">Goudeau, Jonathan</option>
-                    <option value="GravesS">Graves, Sam</option>
-                    <option value="GraceA">Grace, April</option>
-                    <option value="GrandeM">Grande, Michael</option>
-                    <option value="GranvilleE">Granville, Earl</option>
-                    <option value="GreenJR">Green, Jennifer-Ruth</option>
-                    <option value="GreenJ">Green, Justin</option>
-                    <option value="GreenM">Green, Mark</option>
-                    <option value="GrowOurParty">Grow Our Party PAC</option>
-                    <option value="GuentherA">Guenther, Anthony</option>
-                    <option value="GuilloryGS">Guillory, Gary Stitch</option>
-                    <option value="HamiltonB">Hamilton, Bob</option>
-                    <option value="HamiltonP">Hamilton, Philip</option>
-                    <option value="HamiltonT">Hamilton, Tamika</option>
-                    <option value="HanesT">Hanes, Tommy</option>
-                    <option value="HansonA">Hanson, Aaron</option>
-                    <option value="Harrison">Harrison County IN Prosecutor</option>
-                    <option value="Hasso">Hasso, Nicole</option>
-                    <option value="HattonJ">Hatton, Jon</option>
-                    <option value="JaubertD">Haubert, David</option>
-                    <option value="Hayes">Hayes, Tommy</option>
-                    <option value="HeffernanJ">Heffernan, Jessica</option>
-                    <option value="HelsethM">Helseth, Marla</option>
-                    <option value="HendrenJ">Hendren, Jim</option>
-                    <option value="HenryM">Henry, Michael</option>
-                    <option value="HensonDecker">Henson Decker, Jennifer</option>
-                    <option value="Hern-Franking">Hern - Franking</option>
-                    <option value="Hern">Hern, Kevin</option>
-                    <option value="Bart">Hester, Bart</option>
-                    <option value="BrianHester">Hester, Brian</option>
-                    <option value="HerzogFound">Herzog Foundation</option>
-                    <option value="HewittS">Hewitt, Sharon</option>
-                    <option value="HickeyC">Hickey, Colin</option>							
-                    <option value="HigginsC">Higgins, Clay</option>
-                    <option value="HillC">Hill, Curtis</option>
-                    <option value="HillG">Hill, Greg</option>
-                    <option value="HinkleT">Hinkle, Trent</option>
-                    <option value="HochmanN">Hochman, Nathan</option>
-                    <option value="HoldcroftR">Holdcroft, Rick</option>
-                    <option value="HollandJ">Holland, Justin</option>
-                    <option value="H4AH">Hoosiers for Affordable Healthcare</option>
-                    <option value="HoskinsD">Hoskins, Denny</option>
-                    <option value="HouchinE">Houchin, Erin</option>
-                    <option value="HouseCanary">House Canary</option>
-                    <option value="HCF">House Conservatives Fund</option>
-                    <option value="HsiehP">Hsieh, Peter</option>
-                    <option value="HurdW">Hurd, Will</option>
-                    <option value="WHPAC">HURD PAC</option>
-                    <option value="Hyundai">Hyundai</option>
-                    <option value="ILResultsNotRancor">Illinois Results Not Rancor</option>
-                    <option value="INGOP">Indiana GOP</option>
-                    <option value="INRTL">Indiana Right to Life</option>
-                    <option value="IndianaOAG">Indiana Unclaimed</option>
-                    <option value="I4QE">Institute for Quality Education</option>
-                    <option value="IGF">Integrity in Government Fund</option>
-                    <option value="IIDCSD">Invest in DCSD</option>
-                    <option value="ISC">Iowa Senate Caucus</option>
-                    <option value="JacksonCo">Jackson County IN Recorder</option>
-                    <option value="JacksonR">Jackson, Ronny</option>
-                    <option value="JRFM">James Roberson for Forney Mayor</option>
-                    <option value="JasperCo">Jasper County Prosecutor</option>
-                    <option value="JeffersonCo">Jefferson County Prosecutor's Office</option>
-                    <option value="JeffersonCoGOP">Jefferson County GOP</option>
-                    <option value="JerseyF">Jersey First</option>
-                    <option value="JerseyRealP">Jersey Real PAC</option>
-                    <option value="JewellM">Jewell, Matt</option>
-                    <option value="JFaSPAC">Jobs Freedom and Security PAC</option>
-                    <option value="Johnson">Johnson, Mike</option>
-                    <option value="JohnsonS">Johnson, Steven (KS-Treasurer)</option>
-                    <option value="JonesS">Jones, Scott</option>
-                    <option value="JordanDJ">Jordan, DJ</option>
-                    <option value="JoyceJ">Joyce, John</option>
-                    <option value="JusticeE">Justice, Eddy</option>
-                    <option value="KansasForLife">Kansas For Life</option>
-                    <option value="KansasRisingPAC">Kansas Rising PAC</option>
-                    <option value="KansasRenewable">Kansas Renewable Energy Coalition</option>
-                    <option value="Katko">Katko, John</option>
-                    <option value="KattP">Katt, Peter</option>
-                    <option value="KEEP">Keep The Good Life Inc</option>
-                    <option value="KelleyF">Kelley, Fred</option>
-                    <option value="KellyT">Kelly, Trent</option>
-                    <option value="KellyJ">Kelly, Julie</option>
-                    <option value="KempB">Kemp, Brian</option>
-                    <option value="Kennedy">Kennedy, Rhonda</option>
-                    <option value="KnezekE">Knezek, Eric</option>
-                    <option value="KerrG">Kerr, Gib</option>
-                    <option value="KoolidgeM">Koolidge, Mike</option>
-                    <option value="KordaasJ">Kordaas, Jessica</option>
-                    <option value="KovacsJ">Kovacs, John</option>
-                    <option value="Kronfeld">Kronfeld, Andy</option>
-                    <option value="KwasmanA">Kwasman, Adam</option>
-                    <option value="LabsS">Labs, Shelby</option>
-                    <option value="LakeCoILGOP">Lake County IL GOP</option>
-                    <option value="LakeCoP">Lake County Prosecutor</option>
-                    <option value="LakesideComm">Lakeside Communications</option>
-                    <option value="LammC">Lamm, Cindi</option>
-                    <option value="LandreneauJ">Landreneau, Johanna</option>
-                    <option value="LAWPAC">Law Enforcement for a Safer America</option>
-                    <option value="LawrenceW">Lawrence, William</option>
-                    <option value="LeavittK">Leavitt, Karoline</option>
-                    <option value="LeBlancD">LeBlanc, Dean</option>
-                    <option value="Lee">Lee, Mike</option>
-                    <option value="LengquistC">Lengquist, Chris</option>
-                    <option value="LetsWinVA">Lets Win Virginia</option>
-                    <option value="LaCPAC">Lewis and Clark PAC</option>
-                    <option value="LibertyAlliance">liberty Alliance USA</option>
-                    <option value="LifeCenters">Life Centers</option>
-                    <option value="LincolnStrat">Lincoln Strategy Group</option>
-                    <option value="Linehan">Linehan, Lou Ann</option>
-                    <option value="LinpetriM">Linpetri, Mike</option>
-                    <option value="LittleM">Little, Mark</option>
-                    <option value="LivingstonCoGOP">Livingston County GOP</option>
-                    <option value="LivingstonJ">Livingston, Justin</option>
-                    <option value="Lockett">Lockett, Matt</option>
-                    <option value="LohseB">Lohse, Brian</option>
-                    <option value="Long">Long, Billy</option>
-                    <option value="LottR">Lott, Rachel</option>
-                    <option value="LoudermilkB">Loudermilk, Barry</option>
-                    <option value="LABI">Louisiana Association of Business & Industry</option>
-                    <option value="FreeLA">Louisiana Free Enterprise</option>
-                    <option value="LouisianaFC">Louisiana Freedom Caucus</option>
-                    <option value="Lucas">Lucas, Frank</option>
-                    <option value="MabryS">Mabry, Sarah</option>
-                    <option value="MadainF">Madain Foundation</option>
-                    <option value="MadisonCoPros">Madison County Indiana Prosecutor</option>
-                    <option value="MakkiA">Makki, Amanda</option>
-                    <option value="MarantoD">Maranto, Drew</option>
-                    <option value="MarcenoC">Marceno, Carmine</option>
-                    <option value="MartinB">Martin, Brandon</option>
-                    <option value="MartinC">Martin, Chuck</option>
-                    <option value="MaryottB">Maryott, Brian</option>
-                    <option value="MassGOP">Massachusetts GOP</option>
-                    <option value="Mastrangelo">Mastrangelo, Tom</option>
-                    <option value="Maximus">Maximus</option>
-                    <option value="McAdamsB">McAdams, Bill</option>
-                    <option value="McCaneyM">McCaney, Maurice</option>
-                    <option value="McCloyJ">McCloy, John</option>
-                    <option value="McGraneP">McGrane, Phil</option>
-                    <option value="McKnightQ">McKnight, Quincy</option>
-                    <option value="McLendonF">McLendon, Floyd</option>
-                    <option value="McMahonR">McMahon, Ryan</option>
-                    <option value="McMainM">McMain, Marc</option>
-                    <option value="McMakinD">McMakin, Dixon</option>
-                    <option value="MeadowsC">Meadows, Charlotte</option>
-                    <option value="DMMA">Mealer, Alexandra del Moral</option>
-                    <option value="MeijerP">Meijer, Peter</option>
-                    <option value="MeosonT">Melson, Tim</option>
-                    <option value="MerrillJ">Merrill, John</option>
-                    <option value="MerrinD">Merrin, Derek</option>
-                    <option value="Messner">Messner, Bryant</option>
-                    <option value="MeyersA">Meyers, Andy</option>
-                    <option value="MichiganTA">Michigan Taxpayers Alliance</option>
-                    <option value="MiguezB">Miguez, Blake</option>
-                    <option value="MillM">Miller, Mary</option>
-                    <option value="MillerS">Miller, Steve</option>
-                    <option value="MillsF">Mills, Fred</option>
-                    <option value="MillsRC">Mills, Robert Campaign</option>
-                    <option value="MillsR">Mills, Robert</option>
-                    <option value="MischlerR">Mishler, Ryan</option>
-                    <option value="MSS">Missourians for Safer Streets</option>
-                    <option value="MHHRCC">MN House Repub Campaign</option>
-                    <option value="ModernMarkets">Modern Markets Initiative</option>
-                    <option value="MooreB">Moore, Barry</option>
-                    <option value="MooreT">Moore, Tyler</option>
-                    <option value="Morales">Morales, Vincent</option>
-                    <option value="MorganM">Morgan, Matt</option>
-                    <option value="Morrison">Morrison, Tom</option>
-                    <option value="MorrissD">Morriss, Doug</option>
-                    <option value="Mullin">Mullin, Markwayne</option>
-                    <option value="MullinSenate">Mullin, Markwayne (Senate)</option>
-                    <option value="MurphyL">Murphy, Lee</option>
-                    <option value="Myers,MarkfForMayor">Myers, Mark for Mayor</option>
-                    <option value="NCPSOMO">National Coalition of Public School Options - Missouri</option>
-                    <option value="NCPSOTX">National Coalition of Public School Options - Texas</option>
-                    <option value="NPA">National Police Association</option>
-                    <option value="NEFB">Nebraska Farm Bureau</option>
-                    <option value="NFCPAC">Nebraska Federation for Children PAC</option>
-                    <option value="NFAF">Nebraska Future Action Fund</option>
-                    <option value="NEGOP">Nebraska Republican Party</option>
-                    <option value="NRPP">Nebraskans for Reliable and Affordable Electricity</option>
-                    <option value="Nehls">Nehls, Troy</option>
-                    <option value="NCLA">New Civil Liberties Alliance</option>
-                    <option value="NJIIF">New Jersey Intergovernmental Insurance Fund</option>
-                    <option value="NJGOP">New Jersey Republican State Committee</option>
-                    <option value="NewH">New, Heather</option>
-                    <option value="Newhouse">Newhouse, Dan</option>
-                    <option value="NicholsonK">Nicholson, Kevin</option>
-                    <option value="NickelsonJ">Nickelson, John</option>
-                    <option value="NielloR">Niello, Roger</option>
-                    <option value="NoBetterFriends">No Better Friend PAC</option>
-                    <option value="NohraG">Nohra, Guy</option>
-                    <option value="NOMIH">NOMI Health</option>
-                    <option value="NormanCoC">Norman Chamber of Commerce</option>
-                    <option value="NormanR">Norman, Ralph</option>
-                    <option value="NowlinE">Nowlin, Edge</option>
-                    <option value="Oberweis">Oberweis, Jim</option>
-                    <option value="OhioSE">Ohioans for Secure Elections</option>
-                    <option value="OhioTP">Ohio Trucking PAC</option>
-                    <option value="OKlahoma">Oklahoma Unite</option>
-                    <option value="OKCV">Oklahomans for Conservative Values</option>
-                    <option value="OglesB">Ogles, Brandon</option>
-                    <option value="OConnorK">O'Connor, Kevin</option>
-                    <option value="OLaughlinC">O'Laughlin, Cindy</option>
-                    <option value="OperationFreeBirds">Operation Freedom Birds</option>
-                    <option value="OrangeCoPros">Orange County Indiana Prosecutor</option>
-                    <option value="OregonMaC">Oregon Manufactures and Commerce</option>
-                    <option value="OrthodocChristan">Orthodox Christian</option>
-                    <option value="OnderB">Onder, Bob</option>
-                    <option value="OutstateMO">OutState MO</option>
-                    <option value="ParentsSafeSchools">Parents for Safe Schools</option>
-                    <option value="ParkinsonS">Parkinson, Scott</option>
-                    <option value="ParrottN">Parrott, Neil</option>
-                    <option value="Patrick">Patrick, Paula</option>
-                    <option value="PattersonB">Patterson, Buzz</option>
-                    <option value="PeakeM">Peake, Mark</option>
-                    <option value="Pillen">Pillen, Jim</option>
-                    <option value="PlacerCo">Placer County</option>
-                    <option value="CACC">PLift (Citizens for Cannibus Corruption)</option>
-                    <option value="PolinchockT">Polinchock, Todd</option> 
-                    <option value="PowerTheFuture">Power the Future</option>
-                    <option value="PriceB">Price, Betsy</option>
-                    <option value="ProjectEpworthLLC">Project Epworth, LLC</option>
-                    <option value="ProsperNebraska">Prosper Nebraska</option>
-                    <option value="PNTP">Protect Nevada Taxpayers PAC</option>
-                    <option value="PIFGISD">Public Information For Garland ISD</option>
-                    <option value="Pyon">Pyon, Harold</option>
-                    <option value="raney">Raney, John</option>
-                    <option value="RACP">Rare Access Action Project</option>
-                    <option value="RatliffT">Ratliff, Thomas</option>
-                    <option value="RazzoliM">Razzoli, Mark</option>
-                    <option value="ReadyRon">Ready for Ron</option>
-                    <option value="RCD">Rebuilding California Dream</option>
-                    <option value="Recall">Recall Dunleavy</option>
-                    <option value="RecallRavitch">Recall Ravitch</option>
-                    <option value="Reed">Reed, Tom</option>
-                    <option value="ReeeseM">Reese, Mike</option>
-                    <option value="RRG">Remington Research Group</option>
-                    <option value="RickettsP">Ricketts, Pete</option>
-                    <option value="RantzG">Rantz, Gus</option>
-                    <option value="RecklingM">Reckling, Meghan</option>
-                    <option value="RLGPAC">Reform Local Government PAC</option>
-                    <option value="RehmR">Rehm, Rick</option>
-                    <option value="ReisigJ">Reisig, Jeff</option>
-                    <option value="RenegarT">Renegar, Terry</option>
-                    <option value="RepresentUs">Represent Us</option>
-                    <option value="RepublicanAGA">Republican Attorneys General Assoc.</option>
-                    <option value="RGA">Republican Governors Association</option>
-                    <option value="Woodlands">Residents For The Woodlands</option>
-                    <option value="RidenourD">Ridenour, Dan</option>
-                    <option value="RobersonJ">Roberson, James</option>
-                    <option value="RobertsD">Roberts, Dan (AL-15)</option>
-                    <option value="MichelleRomero">Romero, Michelle</option>
-                    <option value="Ross">Ross,Jim</option>
-                    <option value="RuaisJ">Ruais, Jay</option>
-                    <option value="RuffF">Ruff, Frank</option>
-                    <option value="RussK">Russ, Kyle</option>
-                    <option value="RussellS">Russell, Sam</option>
-                    <option value="SAM-Nebraska">SAM Nebraska</option>
-                    <option value="SandvigN">Sandvig, Nate</option>
-                    <option value="SandsC">Sands, Carla</option>
-                    <option value="SanftK">Sanft, Karll</option>
-                    <option value="SaveOurBenefits">SaveOurBenefits</option>
-                    <option value="STSPac">Saving the Second Pac</option>
-                    <option value="ScheurenD">Scheuren, Donna</option>
-                    <option value="SchillerC">Schiller, Chris</option>
-                    <option value="Schmitt">Schmitt, Eric</option>
-                    <option value="ScismK">Scism, Kent</option>
-                    <option value="ScottT">Scott, Tim</option>
-                    <option value="Scotti">Scotti, Richard</option>
-                    <option value="SchlegelS">Schlegel, Scott</option>
-                    <option value="SeabrookM">Seabrook, Mark</option>
-                    <option value="SelenT">Selen, Tayfun</option>
-                    <option value="SethiM">Sethi, Manny</option>
-                    <option value="Seyring">Seyring, Gary</option>
-                    <option value="ShawG">Shaw, Greg</option>
-                    <option value="ShelnuttShay">Shelnutt, Shay</option>
-                    <option value="SilionVBP">Silicon Valley BIZ PAC</option>
-                    <option value="Skaggs">Skaggs, Kimberly</option>
-                    <option value="AdrianS">Smith, Adrian</option>
-                    <option value="SmithD">Smith, Darin</option>
-                    <option value="SmithE">Smith, Eddie</option>
-                    <option value="SmithG">Smith, Gene</option>
-                    <option value="SmithT">Smith, Tim</option>
-                    <option value="SmithTIn">Smith, Tim (IN-3)</option>
-                    <option value="SmithV">Smith, Van</option>
-                    <option value="SodhaJ">Sodha, Jennifer</option>
-                    <option value="SolisI">Solis, Isabella</option>
-                    <option value="SossaPJ">Sossa-Paquette, Jeffrey</option>
-                    <option value="SpaldingC">Spalding, Carla</option>
-                    <option value="SpanoR">Spano, Ross</option>
-                    <option value="Stampede">Stampede Consulting</option>
-                    <option value="StandNYPAC">Stand for New York PAC</option>
-                    <option value="StaatsC">Staats, Craig</option>
-                    <option value="StavrosA">Stavros, Anthony</option>
-                    <option value="Stefanik">Stefanik, Elise</option>
-                    <option value="StephensT">Stephens, Todd</option>
-                    <option value="SteppA">Stepp, Andy</option>
-                    <option value="StevensJ">Stevens, John</option>
-                    <option value="Stonebridge">Stonebridge Healthcare</option>
-                    <option value="SPM">Strategic Political Management</option>
-                    <option value="StrahanJ">Strahan, Jennifer</option>
-                    <option value="StopAndShop">Stop & Shop</option>
-                    <option value="StopTheInsanity">Stop the Insanity</option>
-                    <option value="Stop">Stop Stacey</option>
-                    <option value="SwanR">Swan, Renee</option>
-                    <option value="VirginiaGOP">Suburban Virginia GOP</option>
-                    <option value="Sykes">Sykes, EC</option>
-                    <option value="TaylorF">Taylor, Frances</option>   
-                    <option value="TPP">Tea Party Patriots</option>
-                    <option value="TRSC">Tenneessee Republican Senate Caucus</option>    
-                    <option value="TAC">Texas Association of Counties</option>
-                    <option value="TCA">Texas Construction Association</option>
-                    <option value="TexasDOT">Texas DOT</option>
-                    <option value="TFC">Texas First Coalition</option>
-                    <option value="ThatcherK">Thatcher, Kim</option>
-                    <option value="TAPO">The American Pops Orchestra</option>
-                    <option value="TCPAC">The Commonwealth Pac</option>
-                    <option value="TdtPAC">The Dinner Table PAC</option>
-                    <option value="DriestD">The Driest Drywall Company</option>
-                    <option value="TFAS">The Fund for American Studies</option>
-                    <option value="GoodParty">The Good Party</option>
-                    <option value="Prosper">The Prosper Group</option>
-                    <option value="ThomasL">Thomas, Lisa</option>
-                    <option value="ThomasSB">Thomas, Sharon Breckinridge</option>
-                    <option value="TiffanyT">Tiffany, Tom</option>
-                    <option value="TogetherN">Together Nebraska</option>
-                    <option value="TomlinsonKC">Tomlinson, KC</option>
-                    <option value="TooRiskyPAC">Too Risky PAC</option>
-                    <option value="Transform">Transformative Healthcare</option>
-                    <option value="TAPAC">True Americans PAC</option>
-                    <option value="TrueTheVote">True the Vote</option>
-                    <option value="TruthCourage">Truth and Courage PAC</option>
-                    <option value="TruthOK">Truth for Oklahoma PAC</option>
-                    <option value="TruthInPolitics">Truth in Politics</option>
-                    <option value="TubervilleT">Tuberville, Tommy</option>
-                    <option value="UkraineStrongPAC">Ukraine Strong PAC</option>
-                    <option value="UNFI">UNFI</option>
-                    <option value="UniteTheFightPAC">Unite the Fight PAC</option>
-                    <option value="USA">USA Freedom Fund</option>							
-                    <option value="USDA">USDA</option>
-                    <option value="UTAComcast">Utah Tas Association - Comcast</option>
-                    <option value="ValentinL">Valentin, Leo</option>
-                    <option value="ValueThemBoth">Value Them Both</option>
-                    <option value="VanderWaalH">VanderWaal, Heidi</option>
-                    <option value="Vanguard">Vanguard Field Strategies</option>
-                    <option value="VirginiaCitizenDefense">Virginia Citizens Defense League</option>
-                    <option value="VirginiaFreee">Virginia Free</option>
-                    <option value="VogesB">Voges, Brandon</option>
-                    <option value="VYGISD">Vote Yes Garland ISD</option>
-                    <option value="WagnerA">Wagner, Ann</option>
-                    <option value="Walberg">Walberg, Tim</option>
-                    <option value="WalkerM">Walker, Lee (Mac)</option>
-                    <option value="Walker">Walker, Mark</option>
-                    <option value="waltz">Waltz, Michael</option>
-                    <option value="Wardynski">Wardynski, Casey</option>
-                    <option value="WashCo">Washington County</option>
-                    <option value="WaymasterT">Waymaster, Troy</option>
-                    <option value="Weaver">Weaver, April</option>
-                    <option value="WebertM">Webert, Michael</option>
-                    <option value="WilkS">Wilk, Scott</option>
-                    <option value="WilliamsC">Williams, Cordie</option>
-                    <option value="WilliamsJJ">Williams, James Jimbo</option>
-                    <option value="Williams">Williams, Roger</option>
-                    <option value="WhitakerM">Whitaker, Matt</option>
-                    <option value="RepWittman">Wittman, Rob</option>
-                    <option value="WhiteR">White, Richard</option>
-                    <option value="Welch">Welch, Richard</option>
-                    <option value="WelshE">Welsh, Eric</option>
-                    <option value="WesHixon">Wes Hixon's Outdoor Adventure</option>
-                    <option value="WoodJ">Wood, Joseph</option>
-                    <option value="YanceyD">Yancey, Dan</option>
-                    <option value="YarbroughE">Yarbrough, Ernie</option>
-                    <option value="YoungB">Young, Barbara</option>
-                    <option value="ZubeldiaD">Zubeldia, Derek</option>
-                  </select>
-                </div>
-
-                <div class="col-12 col-sm-4">
-                  <label class="form-label col-12" for="organization">Organization</label>
-                  <select name="organization" id="organization" class="form-select col" aria-label="Organization" data-bind="value: organization">
-                    <option value="PG" selected>Prosper</option>
-							      <option value="Everst">Everest</option>
-                  </select>
-                </div>
-              </div>
-              <div class="row mb-4">
-                <div class="col-12 col-sm-4">
-                  <label class="form-label col-12" for="campaignType">Campaign Type</label>
-                  <select name="campaignType" id="campaignType" class="form-select col" aria-label="Campaign Type" data-bind="value: campaignType">
-                    <option value="CONV" selected>Conversion</option>
-                    <option value="TRAF">Traffic</option>
-                    <option value="ENG">Engagement</option>
-                    <option value="BA">Brand Awareness</option>
-                    <option value="REACH">Reach</option>
-                  </select>
-                </div>
-
-                <div class="col-12 col-sm-4">
-                  <label class="form-label col-12" for="optimizationType">Optimization Type</label>
-                  <select name="optimizationType" id="optimizationType" class="form-select col" aria-label="Optimization Type" data-bind="value: optimizationType">
-                    <option value="PUR" selected>Purchase</option>
-                    <option value="LEAD">Lead</option>
-                    <option value="ENG">Engagement</option>
-                    <option value="LC">Link Clicks</option>
-                    <option value="IMP">Impressions</option>
-                    <option value="LPV">Landing Page View</option>
-                  </select>
-                </div>
-
-                <div class="col-12 col-sm-4">
-                  <label class="form-label col-12" for="targetingMethod">Targeting Method</label>
-                  <select name="targetingMethod" id="targetingMethod" class="form-select col" aria-label="Targeting Method" data-bind="value: targetMethod">
-                    <option value="INT" selected>Interest</option>
-                    <option value="AUD">3P Audience</option>
-                    <option value="IP">IP Targeting</option>
-                    <option value="FILE">File(s)</option>
-                    <option value="OPEN">Open Targeting</option>
-                    <option value="DEMO">Demographic (All + YT)</option>
-                    <option value="CONPAK">Contextual Pack (All + YT)</option>
-                    <option value="Keyword">Keyword (Search)</option>
-                    <option value="Topic">Topic (Search)</option>
-                  </select>
-                </div>
-              </div>
-              <div class="row mb-5">
-                <div class="col-12 col-sm-4">
-                  <label for="geo" class="form-label col-12">Geo</label>
-                  <input type="text" name="geo" id="geo" class="form-control col-12" placeholder="" data-bind="value: geo">
-                </div>
-              </div>
-              <div class="row mb-3 displayUrlGroup"><!--displayurlgroup-->
-                <div class="col-12 col-md-6 mb-3">
-                  <div class="card text-bg-secondary" id="taskNamingPanel" data-bind="css: { 'text-bg-secondary': !goodTaskNameState(), 'text-bg-success': goodTaskNameState() }">
-                    <div class="card-header">
-                      <p>Accelo Trafficking Tasks</p>
-                    </div>
-                    <div class="card-body">
-                      <strong>Tasks:</strong>
-                      <div data-bind="foreach: $root.generateTaskNames">
-                        <ul>
-                          <li style="list-style:none;" data-bind="text: $data" class="copyClipboard"></li>
-                        </ul>
-                      </div>
-
-                      <strong style="text-decoration: none;font-size: 10px;">Notes:</strong> <strong style="text-decoration: none;font-size: 10px;">  </strong>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-12 col-md-6 mb-3">
-                  <div class="card text-bg-secondary" id="landingPagePanel" data-bind="css: { 'text-bg-secondary': !goodPagenameState(), 'text-bg-success': goodPagenameState() }">
-                    <div class="card-header">
-                      <p>Landing Pages, Texting and Email Sends</p>
-                    </div>
-                    <div class="card-body">
-                      <strong>Name:</strong>
-                      <div data-bind="foreach: $root.generatePageNames">
-                        <ul>
-                          <li style="list-style:none;" data-bind="text: $data" class="copyClipboard"></li>
-                        </ul>
-                      </div>
-
-                      <strong style="text-decoration: none;font-size: 10px;">Key:</strong> 
-                      <strong style="text-decoration: none;font-size: 10px;">Agency_Medium_ContentName_UniqueValue_TodaysDate_Ver</strong>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-12 col-md-6 mb-3">
-                  <div class="card text-bg-secondary" id="namingConventionPanel" data-bind="css: { 'text-bg-secondary': !checkNamingConventionDep(), 'text-bg-success': checkNamingConventionDep() }">
-                    <div class="card-header">
-                      <p>Ad Platform Naming Convention</p>
-                    </div>
-                    <div class="card-body" data-bind="foreach: $root.platforms">
-                      <div data-bind="if: $data === 'Facebook'">
-                        <strong>Facebook</strong>
-                        <strong>Camp:</strong>
-                        <ul>
-                          <li class="copyClipboard" class="copy-text" style="list-style: none;" data-bind="text: '' + $root.objective() + '_' + $data + '_' + $root.fbCampaignType()"></li>
-                        </ul>
-
-                        <strong>AdSet:</strong>
-                        <span class="copyClipboard" style="list-style: none;" data-bind="text: $root.optimizationType() + '_' + $root.targetMethod() + '_' + $root.cleanAudience()+ '_' + $root.cleanGeo()"></span>
-
-                        <strong>Ad:</strong>
-                        <span  class="copyClipboard" style="list-style: none;" data-bind="text: $root.fbCreativeLine()"></span>
-                      </div>
-
-                      <div data-bind="if: $data === 'DSP'">
-                        <strong>DSP</strong>
-                        <strong>Line Item:</strong>
-                        <span class="copyClipboard" data-bind="text: $root.client()  + '_' + $root.dspMedium()  + '_' + $root.objective() + '_' + $root.cleanAudience() + '_' + $root.cleanGeo()+ '_' + $root.curYear() + '_[1234]'"></span>
-                        <strong>Group:</strong>
-                        <span class="copyClipboard" data-bind="text: $root.client()  + '_' + $root.dspMedium()  + '_' + $root.objective() + '_' + $root.cleanAudience() + '_' + $root.cleanGeo()+ '_'+ $root.curYear()+'_[1234]'"></span>
-                        <strong>Tactic:</strong>
-                        <span class="copyClipboard" data-bind="text: $root.client()  + '_' +$root.dspMedium() + '_' + $root.cleanAudience() + '_' + $root.cleanGeo() + '_[CREATIVEDETAILS]'"></span>
-                        <strong>Creative:</strong>
-                        <span  class="copyClipboard" data-bind="text: $root.dspCreativeLine()"></span>
-                      </div>
-
-                      <div data-bind="if: $data === 'XANDR'">
-                        <strong>XANDR</strong>
-                        <strong>IO:</strong>
-                        <span class="copyClipboard" data-bind="text: $root.client()  + '_' + $root.dspMedium()  + '_' + $root.objective() + '_' + $root.cleanAudience() + '_' + $root.cleanGeo()+ '_'+$root.curYear()+'_[1234]'"></span>
-                        <strong>LI:</strong>
-                        <span class="copyClipboard" data-bind="text: $root.client()  + '_' +$root.dspMedium() + '_' + $root.cleanAudience() + '_' + $root.cleanGeo() + '_[CREATIVEDETAILS]'"></span>
-                        <strong>Creative:</strong>
-                        <span  class="copyClipboard" data-bind="text: $root.xandrCreativeLine()"></span> 
-                        <strong>Split:</strong>
-                        <span class="copyClipboard" data-bind="text: $root.client()  + '_' + $root.cleanAudience() + '_' + $root.cleanGeo() + '_[EXCH]_[DEVICES]'"></span>
-                      </div>
-
-                      <div data-bind="if: $data === 'Adwords'">
-                        <strong>Adwords</strong>
-                        <strong>Campaign:</strong>
-                        <!-- ko if: $root.googleAdGroupMedium() == 'Search' -->  
-                        <span class="copyClipboard" data-bind="text: $root.googleObjective()  + '_' + $root.googleMedium() + '_' + $root.googleOptimizationType() + '_' +$root.cleanGeo() + '_'+$root.curYear()+'_[1234]_[DETAILS]'"></span>
-                      <!-- /ko -->
-                      <!-- ko if: $root.googleAdGroupMedium() == 'Video' -->  
-                        <span class="copyClipboard" data-bind="text: $root.googleObjective()  + '_' + $root.googleMedium() + '_' + $root.googleOptimizationType() + '_' +$root.cleanGeo() + '_'+$root.curYear()+'_[1234]_'+ $root.cleanAudience() +'_[Skip/NonSkip]'"></span>
-                        <!-- /ko -->
-                        <strong>Ad Group:</strong>
-                         <!-- ko if: $root.googleAdGroupMedium() == 'Search' --> 
-                        <span  class="copyClipboard" data-bind="text: $root.googleAdGroupMedium() + '_' + $root.googleTargetMethod() +'_' + $root.cleanCreative()"></span>
-                        <!-- /ko -->
-                        <!-- ko if: $root.googleAdGroupMedium() == 'Video' --> 
-                        <span  class="copyClipboard" data-bind="text: $root.googleAdGroupMedium() + '_' + $root.googleTargetMethod() +'_' + $root.cleanAudience() + '_' +$root.cleanGeo() + '_[Skip/NonSkip]'"></span>
-                        <!-- /ko -->
-                      <!-- ko if: $root.googleAdGroupMedium() == 'Video' --> 
-                      <strong data-bind="text: $root.medium"></strong>
-                      <span  class="copyClipboard" data-bind="text: $root.googleAdGroupMedium() + '_' + $root.cleanCreative() + '_[LEN]'"></span>
-                      <!-- /ko -->
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-12 col-md-6 mb-3">
-                
-                  <div class="card text-bg-secondary" data-bind="css: { 'text-bg-secondary': !goodState(), 'text-bg-success': goodState() }">
-
-                    <div class="card-header">Final URL(s)</div>
-                    <div data-bind="foreach: platforms" class="card-body">
-                      <div class="row">
-                          <div class="col-md-5"><a target="_blank" href="" data-bind="html: ($root.finalUrlColoredFront()) + $data + ($root.finalUrlColoredBack()), attr: { href: ($root.finalUrlFront()) + $data + ($root.finalUrlBack()), }"></a>
-                          </div>
-                          <br><br>
-                      </div>
-                    </div>
-                  </div>
-                
-                </div>
-              </div>
-
-
-            </form>
-
-            <div class="row">
-              <div class="col-12">
-                <p class="mb-0"><span>*</span>= required</p>
-              </div>
-            </div>
-
-            <!-- use  card in place of panels -->
-          </section>
-          <div class="lower-lines"></div>
-        </div>
-    </main>
-
-    <footer class="bg-primary">
-      <div class="border-container">
-        <div class="container">
-          <div class="row">
-            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-              <img src="https://raw.githubusercontent.com/ian0043/namr-test/main/assets/pg-logo-white.png" alt="Prosper Group Logo" class="img-fluid">
-            </div>
-            <div class="col-12 text-white">
-              <p class="mb-0"><span>&copy;</span> 2023 The Prosper Group | All Rights Reserved</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+	<footer class="bg-primary">
+		<div class="border-container">
+		  <div class="container">
+			<div class="row">
+			  <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+				<img src="../assets/pg-logo-white.png" alt="Prosper Group Logo" class="img-fluid">
+			  </div>
+			  <div class="col-12 text-white">
+				<p class="mb-0"><span>&copy;</span> 2023 The Prosper Group | All Rights Reserved</p>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	</footer>
 
 
 
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-
-
-    <!-- namr functionality -->
-    <script type="text/javascript">
-
-      $(function() {
-  
-        $('body')
-            .on('input propertychange','.pixel-check',function() {
-              var pixel = $(this).attr('data-pixel'),
-                  url   = $(this).val(),
-                  $this = $(this);
-  
-  
-              $this.addClass('success').removeClass('secondary');
-  
-            })
-            .on('focus',"textarea.pixel",function() { $(this).select(); } )
-            .on('mouseup',"textarea.pixel",function (e) {e.preventDefault(); });
-  
-      });
-  
-          function normalizeUrl(url) {
-            console.log(url);
-              if (!/^((http|https):\/\/)/.test(url)) {
-                  if (!/^(pcorp)/.test(url)) {
-                      url = "http://" + url;
-                  } else {
-                      url = "https://" + url;
-                  }
-              }
-              console.log(url);
-              return url;
-          }
-  
-  
-      ko.bindingHandlers.withProperties = {
-        init: function(element, valueAccessor, allBindings, viewModel, bindingContext) {
-          // Make a modified binding context, with a extra properties, and apply it to descendant elements
-          var innerBindingContext = bindingContext.extend(valueAccessor);
-          ko.applyBindingsToDescendants(innerBindingContext, element);
-       
-          // Also tell KO *not* to bind the descendants itself, otherwise they will be bound twice
-          return { controlsDescendantBindings: true };
-        }
-      };
-  
-      function AppViewModel() {
-        this.objective = ko.observable();
-        this.targetMethod = ko.observable();
-        this.optimizationType = ko.observable();
-        this.campaignType = ko.observable();
-        this.geo = ko.observable();
-        this.client = ko.observable();
-  
-        this.medium = ko.observable();
-        this.network = ko.observable();
-        this.organization = ko.observable();
-        this.platforms = ko.observableArray();
-        this.campaign = ko.observable();
-        this.landingurl = ko.observable();
-        this.amount = ko.observable();
-        this.appeal = ko.observable();
-        this.issues = ko.observable();
-        this.subissues = ko.observable();
-        this.creative = ko.observable();
-        this.goodState = ko.observable(false);
-        this.goodPagenameState = ko.observable(false);
-        this.goodTaskNameState = ko.observable(false);
-        this.goodNameState = ko.observable(false);
-        this.audience = ko.observable();
-        this.targetName = ko.observable();
-        
-        //-----------------------------------------------------------------------------
-        // Functions
-        //-----------------------------------------------------------------------------
-  
-        function isEmpty(value){
-          return (typeof value === "undefined" || value == "" || value == null || value.length <=0);
-        }
-  
-        //-----------------------------------------------------------------------------
-        function randomHash(){
-          let r = (Math.random() + 1).toString(36).substring(6,9).toLowerCase();
-          console.log("random: ", r);
-          return r;
-        }
-  
-        function cY(){
-          const year = new Date;
-          r = year.getFullYear()-2000;
-          return r;
-        }
-  
-        this.curYear= ko.computed(function() {
-          const year = new Date;
-          r = year.getFullYear()-2000;
-          return r;
-        },this);
-  
-        //-----------------------------------------------------------------------------
-        this.cleanCreative = ko.computed(function() {
-          var x = this.creative();
-          if(!isEmpty(x)) {
-            return x.trim().replace(/[^A-Z0-9]/ig, "-");
-          }
-        },this);
-  
-        //-----------------------------------------------------------------------------
-        this.cleanGeo = ko.computed(function() {
-          var x = this.geo();
-          if(!isEmpty(x)) {
-            return x.trim().replace(/[^A-Z0-9]/ig, "-");
-          }
-        },this);
-  
-        //-----------------------------------------------------------------------------
-        this.cleanAudience = ko.computed(function() {
-          var x = this.audience();
-          if(!isEmpty(x)) {
-            x.trim();
-            return x.trim().replace(/[^A-Z0-9]/ig, "-");
-          }
-        },this);
-  
-  
-  
-  
-  
-        //-----------------------------------------------------------------------------
-        this.cleanMedium = ko.computed(function() {
-          var x = this.medium();
-          if(!isEmpty(x)) {
-            if(x == 'Motion_Graphic')
-              return 'DISPLAY-Mot';
-            else if(x == 'Static_Graphic')
-              return 'DISPLAY-Stat';
-            else if(x == 'Video')
-              return 'VIDEO';
-            else
-              return x;
-          }
-        },this);
-  
-        //-----------------------------------------------------------------------------
-        this.fbCampaignType = ko.computed(function() {
-          var x = this.campaignType();
-          var y = this.objective();
-          var z = this.cleanAudience();
-          var m = this.medium();
-  
-          var yr = cY();
-          console.log("Year:" + yr);
-  
-          if(!isEmpty(m)) {
-            if(m == 'Motion_Graphic')
-              mm = 'FBMotion';
-            else if(m == 'Static_Graphic')
-              mm = 'FBStatic';
-            else if(m == 'Video')
-              mm = 'FBVid';
-          }
-  
-          if(!isEmpty(x) && !isEmpty(y) && !isEmpty(z)) {
-            if(y == 'PER')
-              return x+'_'+cY()+'_[1234]_'+ mm + '_' +z;
-            else 
-              return x+'_'+cY()+'_[1234]';
-          }
-        },this);
-  
-        //-----------------------------------------------------------------------------
-        this.dspMedium = ko.computed(function() {
-          var x = this.medium();
-          var plat = this.platforms();
-          var tar = this.targetMethod();
-          console.log("dspMedium: "+x)
-  
-          if(!isEmpty(x)) {
-            if((x == 'Video') && (plat == 'DSP' || plat == 'XANDR') && tar != 'IP')
-              return 'PR';
-            else if((x == 'Video') && (plat == 'XANDR') && tar == 'IP')
-              return 'PR-IP';
-            else if((x == 'Video') && (plat == 'DSP') && tar == 'IP')
-              return '*****';
-            else if((x == 'Motion_Graphic' || x == 'Static_Graphic') && (plat == 'DSP' || plat == 'XANDR') && tar != 'IP')
-              return 'DISP';
-            else if((x == 'Motion_Graphic' || x == 'Static_Graphic') && (plat == 'XANDR') && tar == 'IP')
-              return 'DISP-IP';
-            else if((x == 'Motion_Graphic' || x == 'Static_Graphic') && (plat == 'DSP'))
-              return 'DISP';
-            else if((x == 'Audio' && (plat == 'DSP' || plat == 'XANDR') && tar != 'IP'))
-              return 'Audio';
-            else if((x == 'Audio' && (plat == 'XANDR') && tar == 'IP'))
-              return 'Audio-IP';
-            else
-              return '******';
-          }
-        },this);
-  
-        //-----------------------------------------------------------------------------
-        this.googleMedium = ko.computed(function() {
-          var x = this.medium();
-          if(!isEmpty(x)) {
-            console.log(x);
-            if(x == 'Search' || x == 'Video') {
-              if(x == 'Video')
-                return 'YouTube';
-              else
-                return x;
-            } else {
-              return '** INVALID_MEDIUM **';
-            }
-          }
-        },this);
-  
-        //-----------------------------------------------------------------------------
-        this.googleAdGroupMedium = ko.computed(function() {
-          var x = this.medium();
-          if(!isEmpty(x)) {
-            console.log(x);
-            if(x == 'Video' || x == 'Search') {
-                return x;
-            }
-          }
-        },this);
-  
-        //-----------------------------------------------------------------------------
-        this.googleTargetMethod = ko.computed(function() {
-          var x = this.targetMethod();
-          var y = this.medium();
-  
-          if(!isEmpty(x)) {
-            console.log(x);
-            if((x == 'Topic' || x == 'Keyword') && y == 'Search')
-                return x;
-              else if((x == 'DEMO' || x == 'CONPAK') && y == 'Video')
-                return x;
-              else
-                return '** INVALID_TARGET **';
-            }
-        },this);
-  
-        //-----------------------------------------------------------------------------
-        this.googleObjective = ko.computed(function() {
-          var x = this.objective();
-          if(!isEmpty(x)) {
-            if(x == 'MOB')
-              return 'TRAF';
-            else if(x == 'SOC')
-              return '** INVALID_OBJECTIVE **';
-            else
-              return x;
-          }
-        },this);
-  
-        //-----------------------------------------------------------------------------
-        this.googleOptimizationType = ko.computed(function() {
-          var x = this.optimizationType();
-          if(!isEmpty(x)) {
-            if(x == 'ENG' || x == 'LPV') {
-              x = 'LC';
-           } 
-          }
-          console.log("PreReturn X: " +x );	
-          return x;
-        },this);
-  
-        //-----------------------------------------------------------------------------
-        this.acceloObjective = ko.computed(function() {
-          var x = this.objective();
-          if(!isEmpty(x)) {
-            if(x == 'FR')
-              return 'Fundraising';
-            else if(x == 'ACQ')
-              return 'Acquisition';
-            else if(x == 'PER')
-              return 'Persuasion';
-            else if(x == 'MOB')
-              return 'Mobilization';
-            else if(x == 'SOC')
-              return 'Social';
-            else
-              return x;
-          }
-        },this);	
-  
-        //-----------------------------------------------------------------------------
-        this.acceloPlatforms = ko.computed(function() {
-          var plat = this.platforms();
-          var med = this.medium();
-  
-          if(!isEmpty(plat)) {
-            if((plat == 'Adwords') && (med == 'Video'))
-              return 'Youtube';
-            else if(plat == 'Adwords')
-              return 'Search';
-            else 
-              return plat;
-          }
-        },this);	
-  
-        //-----------------------------------------------------------------------------
-        this.acceloMedium = ko.computed(function() {
-          var plat = this.platforms();
-          var med = this.medium();
-          var obj = this.objective();
-          var tar = this.targetMethod();
-  
-          if(!isEmpty(plat)) {
-            if((plat == 'DSP' || plat == 'XANDR') && (med == 'Motion_Graphic' || med == 'Static_Graphic') && tar != 'IP' )
-              return 'DISP';
-            else if((plat == 'XANDR') && (med == 'Motion_Graphic' || med == 'Static_Graphic') && tar == 'IP')
-              return 'DISP-IP';
-            else if((plat == 'DSP' || plat == 'XANDR') && (med == 'Video') && tar != 'IP' )
-              return 'PR';
-            else if((plat == 'XANDR') && (med == 'Video') && tar == 'IP')
-              return 'PR-IP';
-            else if((plat == 'DSP' || plat == 'XANDR') && (med == 'Audio') && tar != 'IP')
-              return 'Audio';
-            else if((plat == 'XANDR') && (med == 'Audio') && tar == 'IP')
-              return 'Audio-IP';
-            else if((plat == 'DSP' || plat == 'XANDR') && (med != 'Motion_Graphic' || med != 'Static_Graphic' || med != 'Video' || med != 'Audio') )
-              return '******';
-            else if((plat == 'Facebook') && (obj == 'FR'))
-              return 'FBFR';
-            else if((plat == 'Facebook') && (obj == 'ACQ'))
-              return 'FBACQ';
-            else if((plat == 'Facebook') && (obj == 'SOC'))
-              return 'FBPP';
-            else if((plat == 'Facebook') && ((obj == 'PER' || obj == 'MOB') && (med == 'Static_Graphic')))
-              return 'FBStatic';
-            else if((plat == 'Facebook') && ((obj == 'PER' || obj == 'MOB') && (med == 'Motion_Graphic')))
-              return 'FBMotion';
-            else if((plat == 'Facebook') && ((obj == 'PER' || obj == 'MOB') && (med == 'Video')))
-              return 'FBVid';
-            else if((plat == 'Facebook') && ((obj == 'PER' || obj == 'MOB') && (med == 'Social')))
-              return 'FBPP';
-            else if(plat == 'Adwords' && med == 'Video')
-              return 'YT';
-            else if(plat == 'Adwords')
-              return 'SEARCH';
-            else return '';
-          }
-        },this);	
-  
-        //-----------------------------------------------------------------------------
-        this.generateDate = (function(data) {
-          var now = new Date();
-          var todayUTC = new Date(Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()));
-          return outputDate = todayUTC.toISOString().slice(0, 10).replace(/-/g, '');
-        });
-  
-        //-----------------------------------------------------------------------------
-        this.createCampaign = ko.computed(function() {
-          var camp = this.campaign = this.client() + "_" + this.cleanCreative() + "_" + this.generateDate();
-          return camp;
-        },this);
-  
-        //-----------------------------------------------------------------------------
-        this.checkNamingConventionDep = (function(c){
-          var x = this.platforms();
-  
-          if(x.includes('Adwords')) {
-              if( isEmpty(this.cleanCreative()) || isEmpty(this.client()) || isEmpty(this.objective()) || 
-                  isEmpty(this.geo()) || isEmpty(this.campaignType()) || isEmpty(this.medium()) || isEmpty(this.platforms()) || 
-                  isEmpty(this.optimizationType()) || isEmpty(this.targetMethod())  ) {
-                    return false; 
-                  } else {
-                    return true;
-                  };
-            } else {
-              if( isEmpty(this.cleanCreative()) || isEmpty(this.audience() ) || isEmpty(this.client()) || isEmpty(this.objective()) || 
-                  isEmpty(this.geo()) || isEmpty(this.campaignType()) || isEmpty(this.medium()) || isEmpty(this.platforms()) || 
-                  isEmpty(this.optimizationType()) || isEmpty(this.targetMethod())  ) {
-                    return false;
-                  } else {
-                    return true;
-                  }
-              } 		
-        });
-  
-        //-----------------------------------------------------------------------------
-        this.checkLandingPageNamesDep = (function(c){
-          if( isEmpty(this.cleanCreative()) || isEmpty(this.appeal()) || this.appeal()=='na' || isEmpty(this.issues()) || this.issues()=='*' || isEmpty(this.subissues()) || this.subissues()=='*' ) {
-            console.log("LandingPageDep: FALSE");
-            console.log(this.landingurl);
-            return false;
-          } else {
-            console.log("LandingPageDep: TRUE");
-            console.log(this.landingurl);
-            return true;
-          }
-        });
-  
-        //-----------------------------------------------------------------------------
-        this.checkTaskNamesDep = (function(c){
-          if( isEmpty(this.cleanCreative()) || isEmpty(this.platforms())) {
-            return false;
-          } else {
-            return true;
-          }
-        });
-  
-  
-        //-----------------------------------------------------------------------------
-        this.checkFinalURLsDep = (function(c){
-          if( isEmpty(this.landingurl()) || isEmpty(this.platforms()) || isEmpty(this.client()) ||  
-              isEmpty(this.cleanCreative()) || isEmpty(this.medium()) ) {
-            //console.log("FinalURLsDep Missing Data")
-            return false;
-          } else {
-            console.log("FinalURLsDep All Good")
-            return true;
-          }
-        });
-  
-        this.generateSubIssue = ko.computed(function() {
-          console.log("InGenerageSubIssues")
-          var si = [];
-  
-          if (isEmpty(this.issues()) || this.issues()=='*') {
-            console.log("InGenerateSubIssues False Block");
-                si[0] = "*";
-            return si;
-          }else{
-            console.log("InGenerateSubIssues True Block Issues: "+ this.issues());
-  
-                si[0] = "*";
-                si[1] = "Pos";
-                si[2] = "Neg";
-  
-  /*					switch(this.issues()) {
-              case 'Border':
-                si = [];
-                si[0] = "Illegals";
-                si[1] = "Clay";
-                si[2] = "Dustin";
-                break;
-              case 'Economy':
-                si = [];
-                si[0] = "Spending";
-                si[1] = "Andrew";
-                si[2] = "Chris";
-                break;
-              case 'Foreign':
-                si = [];
-                si[0] = "Spending";
-                si[1] = "Andrew";
-                si[2] = "Chris";
-                si[3] = "Andrew";
-                si[4] = "Chris";
-                si[5] = "Andrew";
-                si[6] = "Chris";
-                break;
-            }*/
-                      console.log("InGenerateSubIssues True Block Option: "+si[2]);
-            return si;
-          }
-  
-        },this);
-  
-        //-----------------------------------------------------------------------------
-        this.generatePageNames = ko.computed(function() {
-          if( this.checkLandingPageNamesDep()) {
-            this.goodPagenameState(true);
-            var app = "";
-  
-            if(this.appeal() !== "na" ) {
-              app = "_"+this.appeal()+":"+this.issues()+":"+this.subissues();
-            }
-  
-            var c = [];
-            c[0] = this.organization() +"_e_"+this.cleanCreative().toLowerCase() + "-" + randomHash() + "_" + this.generateDate() + "_a"+app;
-            c[1] = this.organization() +"_fbfr_"+this.cleanCreative().toLowerCase() + "-" + randomHash() + "_" + this.generateDate() + "_a"+app;;
-            c[2] = this.organization() +"_fbacq_"+this.cleanCreative().toLowerCase() + "-" + randomHash() + "_" + this.generateDate() + "_a"+app;;
-            c[3] = this.organization() +"_ytfr_"+this.cleanCreative().toLowerCase() + "-" + randomHash() + "_" + this.generateDate() + "_a"+app;;
-            c[4] = this.organization() +"_search_"+this.cleanCreative().toLowerCase() + "-" + randomHash() + "_" + this.generateDate() + "_a"+app;;
-            c[5] = this.organization() +"_g-disp_"+this.cleanCreative().toLowerCase() + "-" + randomHash() + "_" + this.generateDate() + "_a"+app;;
-            c[6] = this.organization() +"_sms_"+this.cleanCreative().toLowerCase() + "-" + randomHash() + "_" + this.generateDate() + "_a"+app;;
-            c[7] = this.organization() +"_rs-e_"+this.cleanCreative().toLowerCase() + "-" + randomHash() + "_" + this.generateDate() + "_a"+app;;
-            c[8] = this.organization() +"_rs-sms_"+this.cleanCreative().toLowerCase() + "-" + randomHash() + "_" + this.generateDate() + "_a"+app;;
-            c[9] = this.organization() +"_lr-e_"+this.cleanCreative().toLowerCase() + "-" + randomHash() + "_" + this.generateDate() + "_a"+app;;
-            c[10] = this.organization() +"_lr-sms_"+this.cleanCreative().toLowerCase() + "-" + randomHash() + "_" + this.generateDate() + "_a"+app;;
-            c[11] = this.organization() +"_wr-up_"+this.cleanCreative().toLowerCase() + "-" + randomHash() + "_" + this.generateDate() + "_a"+app;;
-            c[12] = this.organization() +"_splash_"+this.cleanCreative().toLowerCase() + "-" + randomHash() + "_" + this.generateDate() + "_a"+app;;
-  
-            return c;
-          } else {
-            this.goodPagenameState(false);
-          }
-        },this);
-  
-        //-----------------------------------------------------------------------------
-        this.generateTaskNames = ko.computed(function() {
-          if( this.checkTaskNamesDep()) {
-            this.goodTaskNameState(true);
-            var aud = '';
-            
-              if(this.acceloObjective() == "Persuasion") {
-                if(isEmpty(this.audience())) {
-                  aud = "_AUDNAME_MEDIUM";
-                 } else {
-                  aud = "_" + this.cleanAudience() + "_" + this.acceloMedium();
-              }
-            }
-  
-            var c = [];
-            c[0] = "[EXPID]_Budget_" + this.acceloObjective() + "_" + this.acceloPlatforms() + aud;
-            c[1] =  "[EXPID]_" + this.acceloMedium() +"_"+this.cleanCreative().toLowerCase();
-            return c;
-          } else {
-            this.goodTaskNameState(false);
-          }
-        },this);
-  
-        this.fbCreativeLine = ko.computed(function() {
-          fbm = this.cleanMedium();
-          cc = this.cleanCreative();
-          suffix = 'a'+ '_' + this.appeal()+":"+this.issues()+":"+this.subissues();
-  
-          if(!isEmpty(fbm) && !isEmpty(cc)) {
-            if(fbm == 'VIDEO') {
-              suffix = '[LEN]'+ '_' + this.appeal()+":"+this.issues()+":"+this.subissues();
-            }
-  
-            return fbm + '_' + cc + '_' + suffix;
-          }
-        },this);
-  
-        this.dspCreativeLine = ko.computed(function() {
-          fbm = this.cleanMedium();
-          cc = this.cleanCreative();
-          suffix = 'a'+ '_' + this.appeal()+":"+this.issues()+":"+this.subissues();
-  
-          if(!isEmpty(fbm) && !isEmpty(cc)) {
-            if(fbm == 'VIDEO') {
-              suffix = '[LEN]'+ '_' + this.appeal()+":"+this.issues()+":"+this.subissues();
-            }
-  
-            return fbm + '_' + cc + '_' + suffix;
-          }
-        },this);
-  
-        this.xandrCreativeLine = ko.computed(function() {
-          fbm = this.cleanMedium();
-          cc = this.cleanCreative();
-          suffix = 'a'+ '_' + this.appeal()+":"+this.issues()+":"+this.subissues();
-  
-          if(!isEmpty(fbm) && !isEmpty(cc)) {
-            if(fbm == 'VIDEO') {
-              suffix = '[LEN]'+ '_' + this.appeal()+":"+this.issues()+":"+this.subissues();
-            }
-  
-            return fbm + '_' + cc + '_' + suffix;
-          }
-        },this);
-  
-  
-  
-        //-----------------------------------------------------------------------------
-        this.finalUrlFront = ko.computed(function() {
-          if( this.checkFinalURLsDep() ) { 
-              this.goodState(true);
-              return normalizeUrl(this.landingurl())+"?utm_source=";
-              
-            } else {
-              this.goodState(false);
-            }
-        },this);
-  
-        //-----------------------------------------------------------------------------
-        this.finalUrlBack = ko.computed(function() {
-          if( this.checkFinalURLsDep() ) {
-            //console.log("in finalURLBack check");
-            var a = '';
-            if(this.amount() !== "na" ) {
-              a = "&amount=";
-            }
-  
-              this.goodState(true);
-              return "&utm_campaign="+this.createCampaign()+"&utm_medium="+this.medium()+"&utm_content="+this.cleanCreative()+"&utm_agency="+this.organization()+a;
-  
-            } else {
-              this.goodState(false);
-            }
-        },this);
-        
-        //-----------------------------------------------------------------------------
-        this.finalUrlColoredFront = ko.computed(function() {
-          if( this.checkFinalURLsDep() ) {
+      <script type="text/javascript">
+         $(function() {
+         
+         	$('body')
+         			.on('input propertychange','.pixel-check',function() {
+         				var pixel = $(this).attr('data-pixel'),
+         						url   = $(this).val(),
+         						$this = $(this);
+         
+         
+         				$this.addClass('success').removeClass('danger');
+         
+         			})
+         			.on('focus',"textarea.pixel",function() { $(this).select(); } )
+         			.on('mouseup',"textarea.pixel",function (e) {e.preventDefault(); });
+         
+         });
+         
+               function normalizeUrl(url) {
+               	console.log(url);
+                   if (!/^((http|https):\/\/)/.test(url)) {
+                       if (!/^(pcorp)/.test(url)) {
+                           url = "http://" + url;
+                       } else {
+                           url = "https://" + url;
+                       }
+                   }
+                   console.log(url);
+                   return url;
+               }
+         
+         
+         ko.bindingHandlers.withProperties = {
+         	init: function(element, valueAccessor, allBindings, viewModel, bindingContext) {
+         		// Make a modified binding context, with a extra properties, and apply it to descendant elements
+         		var innerBindingContext = bindingContext.extend(valueAccessor);
+         		ko.applyBindingsToDescendants(innerBindingContext, element);
           
-              this.goodState(true);
-              console.log(
-                "<span class='context-link-default'>" + normalizeUrl(this.landingurl()) + "</span>" +
-                      "<br><span class='context-link-1'>"  + "?utm_source=");
-  
-              return 	"<span class='context-link-default'>" + normalizeUrl(this.landingurl()) + "</span>" +
-                      "<br><span class='context-link-1'>"  + "?utm_source=";
-            } else {
-              this.goodState(false);
-            }
-        },this);
-  
-        //-----------------------------------------------------------------------------
-        this.finalUrlColoredBack = ko.computed(function() {
-          if( this.checkFinalURLsDep() ) {
-  
-            var a = '';
-            if(this.amount() !== "na" ) {
-              a = "<br><span class='context-link-6'>&amount=$XXX</span>";
-            }
-  
-              this.goodState(true);
-              console.log(
-                  "<br><span class='context-link-3'>"  + "&utm_campaign="+this.createCampaign()	+"</span>"+
-                  "<br><span class='context-link-4'>"  + "&utm_medium="+this.medium()						+"</span>"+
-                  "<br><span class='context-link-5'>"  + "&utm_content="+this.cleanCreative()		+"</span>"+
-                  "<br><span class='context-link-2'>"  + "&utm_agency="+this.organization()			+"</span>"+
-                  "<br>"+a+"<br>");
-  
-              return "<br><span class='context-link-3'>"  + "&utm_campaign="+this.createCampaign() +"</span>"+
-                    "<br><span class='context-link-4'>"  + "&utm_medium="+this.medium()     			+"</span>"+
-                    "<br><span class='context-link-5'>"  + "&utm_content="+this.cleanCreative()		+"</span>"+
-                    "<br><span class='context-link-2'>"  + "&utm_agency="+this.organization()			+"</span>"+
-                    a+"<br><br>";
-            } else {
-              this.goodState(false);
-                          
-            }
-        },this);
-        
-      }
-  
-      ko.applyBindings(new AppViewModel());
-  
-    </script>
-  
-  
-  
-  <script type="text/javascript">
-     document.querySelector('body').addEventListener('click', function(event) {       
-          if (event.target.className.toLowerCase() === 'copyclipboard') {          
-            copyElementTextToClipboard(event.target);   
-            $(event.target).attr('title', 'Copied to clipboard.')
-            $(event.target).tooltip('show');
-            setTimeout(function (){
-                $(event.target).removeAttr('title');    
-                $('.copyClipboard').tooltip('hide');                  
-                $('*').tooltip('hide');
-            }, 600);
-          }
-     });
-     function copyElementTextToClipboard(el) {            
-                      var range = document.createRange();
-                      range.selectNode(el);
-                      window.getSelection().removeAllRanges(); // clear current selection
-                      window.getSelection().addRange(range); // to select text
-                      document.execCommand("copy");
-                      window.getSelection().removeAllRanges();// to deselect
-                  }
-  </script>
-  </body>
+         		// Also tell KO *not* to bind the descendants itself, otherwise they will be bound twice
+         		return { controlsDescendantBindings: true };
+         	}
+         };
+         
+         function AppViewModel() {
+         	this.objective = ko.observable();
+         	this.targetMethod = ko.observable();
+         	this.optimizationType = ko.observable();
+         	this.campaignType = ko.observable();
+         	this.geo = ko.observable();
+         	this.client = ko.observable();
+         
+         	this.medium = ko.observable();
+         	this.network = ko.observable();
+         	this.organization = ko.observable();
+         	this.platforms = ko.observableArray();
+         	this.campaign = ko.observable();
+         	this.landingurl = ko.observable();
+         	this.amount = ko.observable();
+         	this.appeal = ko.observable();
+         	this.issues = ko.observable();
+         	this.subissues = ko.observable();
+         	this.creative = ko.observable();
+         	this.goodState = ko.observable(false);
+         	this.goodPagenameState = ko.observable(false);
+         	this.goodTaskNameState = ko.observable(false);
+         	this.goodNameState = ko.observable(false);
+             this.audience = ko.observable();
+             this.targetName = ko.observable();
+             
+             //-----------------------------------------------------------------------------
+             // Functions
+             //-----------------------------------------------------------------------------
+         
+         	function isEmpty(value){
+           		return (typeof value === "undefined" || value == "" || value == null || value.length <=0);
+         	}
+         
+             //-----------------------------------------------------------------------------
+         	function randomHash(){
+         		let r = (Math.random() + 1).toString(36).substring(6,9).toLowerCase();
+         		console.log("random: ", r);
+         		return r;
+         	}
+         
+         	function cY(){
+         		const year = new Date;
+         		r = year.getFullYear()-2000;
+         		return r;
+         	}
+         
+         	this.curYear= ko.computed(function() {
+         		const year = new Date;
+         		r = year.getFullYear()-2000;
+         		return r;
+         	},this);
+         
+             //-----------------------------------------------------------------------------
+         	this.cleanCreative = ko.computed(function() {
+         		var x = this.creative();
+         		if(!isEmpty(x)) {
+         			return x.trim().replace(/[^A-Z0-9]/ig, "-");
+         		}
+         	},this);
+         
+             //-----------------------------------------------------------------------------
+         	this.cleanGeo = ko.computed(function() {
+         		var x = this.geo();
+         		if(!isEmpty(x)) {
+         			return x.trim().replace(/[^A-Z0-9]/ig, "-");
+         		}
+         	},this);
+         
+             //-----------------------------------------------------------------------------
+         	this.cleanAudience = ko.computed(function() {
+         		var x = this.audience();
+         		if(!isEmpty(x)) {
+         			x.trim();
+         			return x.trim().replace(/[^A-Z0-9]/ig, "-");
+         		}
+         	},this);
+         
+         
+         
+         
+         
+             //-----------------------------------------------------------------------------
+         	this.cleanMedium = ko.computed(function() {
+         		var x = this.medium();
+         		if(!isEmpty(x)) {
+                 if(x == 'Motion_Graphic')
+                   return 'DISPLAY-Mot';
+                 else if(x == 'Static_Graphic')
+                   return 'DISPLAY-Stat';
+                 else if(x == 'Video')
+                   return 'VIDEO';
+                 else
+         			  return x;
+         		}
+         	},this);
+         
+             //-----------------------------------------------------------------------------
+         	this.fbCampaignType = ko.computed(function() {
+         		var x = this.campaignType();
+         		var y = this.objective();
+         		var z = this.cleanAudience();
+         		var m = this.medium();
+         
+         		var yr = cY();
+         		console.log("Year:" + yr);
+         
+         		if(!isEmpty(m)) {
+                 if(m == 'Motion_Graphic')
+                   mm = 'FBMotion';
+                 else if(m == 'Static_Graphic')
+                   mm = 'FBStatic';
+                 else if(m == 'Video')
+                   mm = 'FBVid';
+         		}
+         
+         		if(!isEmpty(x) && !isEmpty(y) && !isEmpty(z)) {
+                 if(y == 'PER')
+                   return x+'_'+cY()+'_[1234]_'+ mm + '_' +z;
+                 else 
+                   return x+'_'+cY()+'_[1234]';
+         		}
+         	},this);
+         
+             //-----------------------------------------------------------------------------
+             this.dspMedium = ko.computed(function() {
+         		var x = this.medium();
+         		var plat = this.platforms();
+         		var tar = this.targetMethod();
+         		console.log("dspMedium: "+x)
+         
+         		if(!isEmpty(x)) {
+                 if((x == 'Video') && (plat == 'DSP' || plat == 'XANDR') && tar != 'IP')
+                   return 'PR';
+                 else if((x == 'Video') && (plat == 'XANDR') && tar == 'IP')
+         				return 'PR-IP';
+         			else if((x == 'Video') && (plat == 'DSP') && tar == 'IP')
+         				return '*****';
+                 else if((x == 'Motion_Graphic' || x == 'Static_Graphic') && (plat == 'DSP' || plat == 'XANDR') && tar != 'IP')
+                   return 'DISP';
+                 else if((x == 'Motion_Graphic' || x == 'Static_Graphic') && (plat == 'XANDR') && tar == 'IP')
+                   return 'DISP-IP';
+                 else if((x == 'Motion_Graphic' || x == 'Static_Graphic') && (plat == 'DSP'))
+                   return 'DISP';
+                 else if((x == 'Audio' && (plat == 'DSP' || plat == 'XANDR') && tar != 'IP'))
+                   return 'Audio';
+                 else if((x == 'Audio' && (plat == 'XANDR') && tar == 'IP'))
+                   return 'Audio-IP';
+                 else
+         			  return '******';
+         		}
+         	},this);
+         
+             //-----------------------------------------------------------------------------
+             this.googleMedium = ko.computed(function() {
+         		var x = this.medium();
+         		if(!isEmpty(x)) {
+         			console.log(x);
+                 if(x == 'Search' || x == 'Video') {
+                   if(x == 'Video')
+                   	return 'YouTube';
+                 	else
+         			  	return x;
+                 } else {
+         			  return '** INVALID_MEDIUM **';
+         			}
+         		}
+         	},this);
+         
+             //-----------------------------------------------------------------------------
+         	this.googleAdGroupMedium = ko.computed(function() {
+         		var x = this.medium();
+         		if(!isEmpty(x)) {
+         			console.log(x);
+                 if(x == 'Video' || x == 'Search') {
+                   	return x;
+         			}
+         		}
+         	},this);
+         
+             //-----------------------------------------------------------------------------
+         	this.googleTargetMethod = ko.computed(function() {
+         		var x = this.targetMethod();
+         		var y = this.medium();
+         
+         		if(!isEmpty(x)) {
+         			console.log(x);
+                 if((x == 'Topic' || x == 'Keyword') && y == 'Search')
+                   	return x;
+                   else if((x == 'DEMO' || x == 'CONPAK') && y == 'Video')
+         					return x;
+                   else
+                   	return '** INVALID_TARGET **';
+         			}
+         	},this);
+         
+             //-----------------------------------------------------------------------------
+         	this.googleObjective = ko.computed(function() {
+         		var x = this.objective();
+         		if(!isEmpty(x)) {
+                 if(x == 'MOB')
+                   return 'TRAF';
+                 else if(x == 'SOC')
+                   return '** INVALID_OBJECTIVE **';
+                 else
+                 	return x;
+         		}
+         	},this);
+         
+             //-----------------------------------------------------------------------------
+         	this.googleOptimizationType = ko.computed(function() {
+         		var x = this.optimizationType();
+         		if(!isEmpty(x)) {
+                 if(x == 'ENG' || x == 'LPV') {
+                   x = 'LC';
+                } 
+         		}
+         		console.log("PreReturn X: " +x );	
+         		return x;
+         	},this);
+         
+             //-----------------------------------------------------------------------------
+         	this.acceloObjective = ko.computed(function() {
+         		var x = this.objective();
+         		if(!isEmpty(x)) {
+                 if(x == 'FR')
+                   return 'Fundraising';
+                 else if(x == 'ACQ')
+                   return 'Acquisition';
+                 else if(x == 'PER')
+                   return 'Persuasion';
+                 else if(x == 'MOB')
+                   return 'Mobilization';
+                 else if(x == 'SOC')
+                   return 'Social';
+                 else
+                 	return x;
+         		}
+         	},this);	
+         
+             //-----------------------------------------------------------------------------
+         	this.acceloPlatforms = ko.computed(function() {
+         		var plat = this.platforms();
+         		var med = this.medium();
+         
+         		if(!isEmpty(plat)) {
+         			if((plat == 'Adwords') && (med == 'Video'))
+                   return 'Youtube';
+                 else if(plat == 'Adwords')
+                   return 'Search';
+                 else 
+                 	return plat;
+         		}
+         	},this);	
+         
+             //-----------------------------------------------------------------------------
+         	this.acceloMedium = ko.computed(function() {
+         		var plat = this.platforms();
+         		var med = this.medium();
+         		var obj = this.objective();
+         		var tar = this.targetMethod();
+         
+         		if(!isEmpty(plat)) {
+                 if((plat == 'DSP' || plat == 'XANDR') && (med == 'Motion_Graphic' || med == 'Static_Graphic') && tar != 'IP' )
+                   return 'DISP';
+                 else if((plat == 'XANDR') && (med == 'Motion_Graphic' || med == 'Static_Graphic') && tar == 'IP')
+                   return 'DISP-IP';
+                 else if((plat == 'DSP' || plat == 'XANDR') && (med == 'Video') && tar != 'IP' )
+                   return 'PR';
+                 else if((plat == 'XANDR') && (med == 'Video') && tar == 'IP')
+                   return 'PR-IP';
+                 else if((plat == 'DSP' || plat == 'XANDR') && (med == 'Audio') && tar != 'IP')
+                   return 'Audio';
+                 else if((plat == 'XANDR') && (med == 'Audio') && tar == 'IP')
+                   return 'Audio-IP';
+                 else if((plat == 'DSP' || plat == 'XANDR') && (med != 'Motion_Graphic' || med != 'Static_Graphic' || med != 'Video' || med != 'Audio') )
+                   return '******';
+                 else if((plat == 'Facebook') && (obj == 'FR'))
+                   return 'FBFR';
+                 else if((plat == 'Facebook') && (obj == 'ACQ'))
+                   return 'FBACQ';
+                 else if((plat == 'Facebook') && (obj == 'SOC'))
+                   return 'FBPP';
+                 else if((plat == 'Facebook') && ((obj == 'PER' || obj == 'MOB') && (med == 'Static_Graphic')))
+                   return 'FBStatic';
+                 else if((plat == 'Facebook') && ((obj == 'PER' || obj == 'MOB') && (med == 'Motion_Graphic')))
+                   return 'FBMotion';
+                 else if((plat == 'Facebook') && ((obj == 'PER' || obj == 'MOB') && (med == 'Video')))
+                   return 'FBVid';
+                 else if((plat == 'Facebook') && ((obj == 'PER' || obj == 'MOB') && (med == 'Social')))
+                   return 'FBPP';
+                 else if(plat == 'Adwords' && med == 'Video')
+                   return 'YT';
+                 else if(plat == 'Adwords')
+                   return 'SEARCH';
+                 else return '';
+         		}
+         	},this);	
+         
+             //-----------------------------------------------------------------------------
+         	this.generateDate = (function(data) {
+         		var now = new Date();
+         		var todayUTC = new Date(Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()));
+         		return outputDate = todayUTC.toISOString().slice(0, 10).replace(/-/g, '');
+         	});
+         
+             //-----------------------------------------------------------------------------
+             this.createCampaign = ko.computed(function() {
+             	var camp = this.campaign = this.client() + "_" + this.cleanCreative() + "_" + this.generateDate();
+             	return camp;
+             },this);
+         
+             //-----------------------------------------------------------------------------
+         	this.checkNamingConventionDep = (function(c){
+         		var x = this.platforms();
+         
+         		if(x.includes('Adwords')) {
+         				if( isEmpty(this.cleanCreative()) || isEmpty(this.client()) || isEmpty(this.objective()) || 
+         						isEmpty(this.geo()) || isEmpty(this.campaignType()) || isEmpty(this.medium()) || isEmpty(this.platforms()) || 
+         						isEmpty(this.optimizationType()) || isEmpty(this.targetMethod())  ) {
+         							return false; 
+         						} else {
+         							return true;
+         						};
+         			} else {
+         				if( isEmpty(this.cleanCreative()) || isEmpty(this.audience() ) || isEmpty(this.client()) || isEmpty(this.objective()) || 
+         						isEmpty(this.geo()) || isEmpty(this.campaignType()) || isEmpty(this.medium()) || isEmpty(this.platforms()) || 
+         						isEmpty(this.optimizationType()) || isEmpty(this.targetMethod())  ) {
+         							return false;
+         						} else {
+         							return true;
+         						}
+         				} 		
+         	});
+         
+             //-----------------------------------------------------------------------------
+         	this.checkLandingPageNamesDep = (function(c){
+         		if( isEmpty(this.cleanCreative()) || isEmpty(this.appeal()) || this.appeal()=='na' || isEmpty(this.issues()) || this.issues()=='*' || isEmpty(this.subissues()) || this.subissues()=='*' ) {
+         			console.log("LandingPageDep: FALSE");
+         			return false;
+         		} else {
+         			console.log("LandingPageDep: TRUE");
+         			return true;
+         		}
+         	});
+         
+             //-----------------------------------------------------------------------------
+         	this.checkTaskNamesDep = (function(c){
+         		if( isEmpty(this.cleanCreative()) || isEmpty(this.platforms())) {
+         			return false;
+         		} else {
+         			return true;
+         		}
+         	});
+         
+         
+             //-----------------------------------------------------------------------------
+         	this.checkFinalURLsDep = (function(c){
+         		if( isEmpty(this.landingurl()) || isEmpty(this.platforms()) || isEmpty(this.client()) ||  
+         				isEmpty(this.cleanCreative()) || isEmpty(this.medium()) ) {
+         			//console.log("FinalURLsDep Missing Data")
+         			return false;
+         		} else {
+         			console.log("FinalURLsDep All Good")
+         			return true;
+         		}
+         	});
+         
+         	this.generateSubIssue = ko.computed(function() {
+         		console.log("InGenerageSubIssues")
+         		var si = [];
+         
+         		if (isEmpty(this.issues()) || this.issues()=='*') {
+         			console.log("InGenerateSubIssues False Block");
+         					si[0] = "*";
+         			return si;
+         		}else{
+         			console.log("InGenerateSubIssues True Block Issues: "+ this.issues());
+         
+         					si[0] = "*";
+         					si[1] = "Pos";
+         					si[2] = "Neg";
+         
+         /*					switch(this.issues()) {
+         				case 'Border':
+         					si = [];
+         					si[0] = "Illegals";
+         					si[1] = "Clay";
+         					si[2] = "Dustin";
+         					break;
+         				case 'Economy':
+         					si = [];
+         					si[0] = "Spending";
+         					si[1] = "Andrew";
+         					si[2] = "Chris";
+         					break;
+         				case 'Foreign':
+         					si = [];
+         					si[0] = "Spending";
+         					si[1] = "Andrew";
+         					si[2] = "Chris";
+         					si[3] = "Andrew";
+         					si[4] = "Chris";
+         					si[5] = "Andrew";
+         					si[6] = "Chris";
+         					break;
+         			}*/
+         								console.log("InGenerateSubIssues True Block Option: "+si[2]);
+         			return si;
+         		}
+         
+         	},this);
+         
+             //-----------------------------------------------------------------------------
+         	this.generatePageNames = ko.computed(function() {
+         		if( this.checkLandingPageNamesDep()) {
+         			this.goodPagenameState(true);
+         			var app = "";
+         
+         			if(this.appeal() !== "na" ) {
+         				app = "_"+this.appeal()+":"+this.issues()+":"+this.subissues();
+         			}
+         
+         			var c = [];
+         			c[0] = this.organization() +"_e_"+this.cleanCreative().toLowerCase() + "-" + randomHash() + "_" + this.generateDate() + "_a"+app;
+         			c[1] = this.organization() +"_fbfr_"+this.cleanCreative().toLowerCase() + "-" + randomHash() + "_" + this.generateDate() + "_a"+app;;
+         			c[2] = this.organization() +"_fbacq_"+this.cleanCreative().toLowerCase() + "-" + randomHash() + "_" + this.generateDate() + "_a"+app;;
+         			c[3] = this.organization() +"_ytfr_"+this.cleanCreative().toLowerCase() + "-" + randomHash() + "_" + this.generateDate() + "_a"+app;;
+         			c[4] = this.organization() +"_search_"+this.cleanCreative().toLowerCase() + "-" + randomHash() + "_" + this.generateDate() + "_a"+app;;
+         			c[5] = this.organization() +"_g-disp_"+this.cleanCreative().toLowerCase() + "-" + randomHash() + "_" + this.generateDate() + "_a"+app;;
+         			c[6] = this.organization() +"_sms_"+this.cleanCreative().toLowerCase() + "-" + randomHash() + "_" + this.generateDate() + "_a"+app;;
+         			c[7] = this.organization() +"_rs-e_"+this.cleanCreative().toLowerCase() + "-" + randomHash() + "_" + this.generateDate() + "_a"+app;;
+         			c[8] = this.organization() +"_rs-sms_"+this.cleanCreative().toLowerCase() + "-" + randomHash() + "_" + this.generateDate() + "_a"+app;;
+         			c[9] = this.organization() +"_lr-e_"+this.cleanCreative().toLowerCase() + "-" + randomHash() + "_" + this.generateDate() + "_a"+app;;
+         			c[10] = this.organization() +"_lr-sms_"+this.cleanCreative().toLowerCase() + "-" + randomHash() + "_" + this.generateDate() + "_a"+app;;
+         			c[11] = this.organization() +"_wr-up_"+this.cleanCreative().toLowerCase() + "-" + randomHash() + "_" + this.generateDate() + "_a"+app;;
+         			c[12] = this.organization() +"_splash_"+this.cleanCreative().toLowerCase() + "-" + randomHash() + "_" + this.generateDate() + "_a"+app;;
+         
+         			return c;
+         		} else {
+         			this.goodPagenameState(false);
+         		}
+             },this);
+         
+             //-----------------------------------------------------------------------------
+             this.generateTaskNames = ko.computed(function() {
+         		if( this.checkTaskNamesDep()) {
+         			this.goodTaskNameState(true);
+         			var aud = '';
+         			
+         				if(this.acceloObjective() == "Persuasion") {
+         					if(isEmpty(this.audience())) {
+         						aud = "_AUDNAME_MEDIUM";
+         					 } else {
+         						aud = "_" + this.cleanAudience() + "_" + this.acceloMedium();
+         				}
+         			}
+         
+         			var c = [];
+         			c[0] = "[EXPID]_Budget_" + this.acceloObjective() + "_" + this.acceloPlatforms() + aud;
+         			c[1] =  "[EXPID]_" + this.acceloMedium() +"_"+this.cleanCreative().toLowerCase();
+         			return c;
+         		} else {
+         			this.goodTaskNameState(false);
+         		}
+             },this);
+         
+         	this.fbCreativeLine = ko.computed(function() {
+         		fbm = this.cleanMedium();
+         		cc = this.cleanCreative();
+         		suffix = 'a'+ '_' + this.appeal()+":"+this.issues()+":"+this.subissues();
+         
+         		if(!isEmpty(fbm) && !isEmpty(cc)) {
+         			if(fbm == 'VIDEO') {
+         				suffix = '[LEN]'+ '_' + this.appeal()+":"+this.issues()+":"+this.subissues();
+         			}
+         
+         			return fbm + '_' + cc + '_' + suffix;
+         		}
+         	},this);
+         
+         	this.dspCreativeLine = ko.computed(function() {
+         		fbm = this.cleanMedium();
+         		cc = this.cleanCreative();
+         		suffix = 'a'+ '_' + this.appeal()+":"+this.issues()+":"+this.subissues();
+         
+         		if(!isEmpty(fbm) && !isEmpty(cc)) {
+         			if(fbm == 'VIDEO') {
+         				suffix = '[LEN]'+ '_' + this.appeal()+":"+this.issues()+":"+this.subissues();
+         			}
+         
+         			return fbm + '_' + cc + '_' + suffix;
+         		}
+         	},this);
+         
+         	this.xandrCreativeLine = ko.computed(function() {
+         		fbm = this.cleanMedium();
+         		cc = this.cleanCreative();
+         		suffix = 'a'+ '_' + this.appeal()+":"+this.issues()+":"+this.subissues();
+         
+         		if(!isEmpty(fbm) && !isEmpty(cc)) {
+         			if(fbm == 'VIDEO') {
+         				suffix = '[LEN]'+ '_' + this.appeal()+":"+this.issues()+":"+this.subissues();
+         			}
+         
+         			return fbm + '_' + cc + '_' + suffix;
+         		}
+         	},this);
+         
+         
+         
+             //-----------------------------------------------------------------------------
+         	this.finalUrlFront = ko.computed(function() {
+         		if( this.checkFinalURLsDep() ) { 
+         				this.goodState(true);
+         				return normalizeUrl(this.landingurl())+"?utm_source=";
+         			} else {
+         				this.goodState(false);
+         			}
+         	},this);
+         
+             //-----------------------------------------------------------------------------
+         	this.finalUrlBack = ko.computed(function() {
+         		if( this.checkFinalURLsDep() ) {
+         			//console.log("in finalURLBack check");
+         			var a = '';
+         			if(this.amount() !== "na" ) {
+         				a = "&amount=";
+         			}
+         
+         				this.goodState(true);
+         				return "&utm_campaign="+this.createCampaign()+"&utm_medium="+this.medium()+"&utm_content="+this.cleanCreative()+"&utm_agency="+this.organization()+a;
+         
+         			} else {
+         				this.goodState(false);
+         			}
+         	},this);
+         	
+         	//-----------------------------------------------------------------------------
+         	this.finalUrlColoredFront = ko.computed(function() {
+         		if( this.checkFinalURLsDep() ) {
+         		
+         				this.goodState(true);
+         				console.log(
+         					"<span class='context-link-default'>" + normalizeUrl(this.landingurl()) + "</span>" +
+         								"<br><span class='context-link-1'>"  + "?utm_source=");
+         
+         				return 	"<span class='context-link-default'>" + normalizeUrl(this.landingurl()) + "</span>" +
+         								"<br><span class='context-link-1'>"  + "?utm_source=";
+         			} else {
+         				this.goodState(false);
+         			}
+         	},this);
+         
+             //-----------------------------------------------------------------------------
+         	this.finalUrlColoredBack = ko.computed(function() {
+         		if( this.checkFinalURLsDep() ) {
+         
+         			var a = '';
+         			if(this.amount() !== "na" ) {
+         				a = "<br><span class='context-link-6'>&amount=$XXX</span>";
+         			}
+         
+         				this.goodState(true);
+         				console.log(
+         						"<br><span class='context-link-3'>"  + "&utm_campaign="+this.createCampaign()	+"</span>"+
+         						"<br><span class='context-link-4'>"  + "&utm_medium="+this.medium()						+"</span>"+
+         						"<br><span class='context-link-5'>"  + "&utm_content="+this.cleanCreative()		+"</span>"+
+         						"<br><span class='context-link-2'>"  + "&utm_agency="+this.organization()			+"</span>"+
+         						"<br>"+a+"<br>");
+         
+         				return "<br><span class='context-link-3'>"  + "&utm_campaign="+this.createCampaign() +"</span>"+
+         							"<br><span class='context-link-4'>"  + "&utm_medium="+this.medium()     			+"</span>"+
+         							"<br><span class='context-link-5'>"  + "&utm_content="+this.cleanCreative()		+"</span>"+
+         							"<br><span class='context-link-2'>"  + "&utm_agency="+this.organization()			+"</span>"+
+         							a+"<br><br>";
+         			} else {
+         				this.goodState(false);
+         			}
+         	},this);
+         	
+         }
+         
+         ko.applyBindings(new AppViewModel());
+         
+      </script>
+      <script type="text/javascript">
+         document.querySelector('body').addEventListener('click', function(event) {       
+              if (event.target.className.toLowerCase() === 'copyclipboard') {          
+                copyElementTextToClipboard(event.target);   
+                $(event.target).attr('title', 'Copied to clipboard.')
+                $(event.target).tooltip('show');
+                setTimeout(function (){
+                    $(event.target).removeAttr('title');    
+                    $('.copyClipboard').tooltip('hide');                  
+                    $('*').tooltip('hide');
+                }, 600);
+              }
+         });
+         function copyElementTextToClipboard(el) {            
+                          var range = document.createRange();
+                          range.selectNode(el);
+                          window.getSelection().removeAllRanges(); // clear current selection
+                          window.getSelection().addRange(range); // to select text
+                          document.execCommand("copy");
+                          window.getSelection().removeAllRanges();// to deselect
+                      }
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+   </body>
 </html>

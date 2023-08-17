@@ -76,7 +76,7 @@ main {
 }
 
 span {
-  color: red;
+  /* color: red; */
 }
 
 main .border-container {
@@ -150,15 +150,11 @@ main .lower-lines::after {
 }
 
 label.form-check.form-check-label {
-    /* font-size: 13px; */
-    /* display: flex;
-    flex-basis: fit-content; */
-
-    font-size: .95rem; /*1rem*/
+    font-size: .95rem;
     /* font-weight: bold; */
     display: flex;
     flex-basis: auto;
-    margin-inline: .2rem /*1.5rem;*/
+    margin-inline: 0.2rem /*1.5rem;*/;
 }
 
 .form-check-input:checked {
@@ -172,13 +168,17 @@ label.form-check.form-check-label {
 }
 
 /* input styles */
-input[type="text"], form select {
+input[type="url"],input[type="text"], form select {
     border: none!important;
     border-bottom: 1px solid!important;
     border-radius: 0!important;
 }
 
-input[type="text"]:focus, form select:focus {
+input[type="url"].form-control,input[type="text"].form-control {
+  background-color: transparent;
+}
+
+input[type="url"]:focus,input[type="text"]:focus, form select:focus {
     box-shadow: inset 0px -3px 35px 0 #abc55340!important;
     /* box-shadow: inset 0 -3px 0 0 #abc55340!important; */
 }
@@ -226,13 +226,100 @@ footer p {
 }
 
 /* displaygroupurl */
+.displayUrlGroup .card-header {
+  border-bottom: transparent;
+}
+
 .displayUrlGroup .card-body {
   background-color: #fff!important;
   color: #212529!important;
   height: 200px;
   overflow: hidden;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
+
+.displayUrlGroup .card {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
 
 .displayUrlGroup .card-body:hover {
   overflow-y: scroll;
+  scrollbar-color: gray;
+  scrollbar-width: thin;
+  scrollbar-gutter: stable;
 }
+
+.displayUrlGroup a {
+  text-decoration: none;
+}
+
+.displayUrlGroup a span {
+  color: #212529;
+}
+
+
+/* scrollbar */
+.displayUrlGroup .card-body::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.displayUrlGroup .card-body::-webkit-scrollbar {
+  /* display: block; */
+  width: 10px;
+}
+.displayUrlGroup .card-body::-webkit-scrollbar-track {
+  /* background: transparent; */
+}
+.displayUrlGroup .card-body::-webkit-scrollbar-track-piece:start {
+  /* margin-top: 10px; */
+  /* margin-left: 10px; */
+  /* background-color: transparent; */
+}
+.displayUrlGroup .card-body::-webkit-scrollbar-track-piece:end {
+  /* margin-bottom: 10px; */
+  /* margin-left: 10px; */
+  /* background-color: transparent;*/
+}
+
+
+
+/* pixelBG */
+.bgContainer {
+  position: relative;
+}
+
+.pixelBg {
+  position: absolute;
+  top: -2rem;
+  left: -2rem;
+  width: calc(100vw - 0.95rem);
+  background-image: url('../assets/pixelbg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  opacity: 0.1;
+}
+
+
+/* greendot */
+main .border-container::before,
+main .border-container::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #ABC553;
+  border-radius: 50%;
+}
+main .border-container::before {
+  left: -5.5px;
+}
+main .border-container::after {
+  right: -5.5px;
+}
+
