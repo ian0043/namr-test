@@ -905,7 +905,7 @@
 								<li class="copyClipboard" class="copy-text" style="list-style: none;" data-bind="text: '' + $root.objective() + '_' + $data + '_' + $root.fbCampaignType()"></li>
 							</ul>
 							<strong>AdSet:</strong>
-							<span class="copyClipboard" style="list-style: none;" data-bind="text: $root.optimizationType() + '_' + $root.targetMethod() + '_' + $root.cleanAudience()+ '_' + $root.cleanGeo()"></span>
+							<span class="copyClipboard" style="list-style: none;" data-bind="text: $root.optimizationType() + '_' + $root.targetMethod() + '_' + $root.cleanAudience()+ '_' + $root.cleanGeo()"></span><br><br>
 							<strong>Ad:</strong>
 							<span  class="copyClipboard" style="list-style: none;" data-bind="text: $root.fbCreativeLine()"></span><br><br>
 							</div>
@@ -935,7 +935,7 @@
 							<strong>Adwords</strong>
 							<strong>Campaign:</strong>
 							<!-- ko if: $root.googleAdGroupMedium() == 'Search' -->  
-							<span class="copyClipboard" data-bind="text: $root.googleObjective()  + '_' + $root.googleMedium() + '_' + $root.googleOptimizationType() + '_' +$root.cleanGeo() + '_'+$root.curYear()+'_[1234]_[DETAILS]'"></span>
+							<span class="copyClipboard" data-bind="text: $root.googleObjective()  + '_' + $root.googleMedium() + '_' + $root.googleOptimizationType() + '_' +$root.cleanGeo() + '_'+$root.curYear()+'_[1234]_[DETAILS]'"></span><br><br>
 							<!-- /ko -->
 							<!-- ko if: $root.googleAdGroupMedium() == 'Video' -->  
 							<span class="copyClipboard" data-bind="text: $root.googleObjective()  + '_' + $root.googleMedium() + '_' + $root.googleOptimizationType() + '_' +$root.cleanGeo() + '_'+$root.curYear()+'_[1234]_'+ $root.cleanAudience() +'_[Skip/NonSkip]'"></span>
