@@ -1374,7 +1374,7 @@
          
              //-----------------------------------------------------------------------------
          	this.checkLandingPageNamesDep = (function(c){
-         		if( isEmpty(this.cleanCreative()) || isEmpty(this.appeal()) || this.appeal()=='na' || isEmpty(this.issues()) || this.issues()=='*' || isEmpty(this.subissues()) || this.subissues()=='*' ) {
+         		if( isEmpty(this.cleanCreative()) || isEmpty(this.appeal()) || this.appeal()=='na' || isEmpty(this.issues()) || this.issues()=='&nbsp;' || isEmpty(this.subissues()) || this.subissues()=='&nbsp;' ) {
          			console.log("LandingPageDep: FALSE");
          			return false;
          		} else {
