@@ -226,6 +226,11 @@ footer p {
   padding-block: calc(var(--bs-gutter-x) * .5);
 }
 
+footer img {
+  border-bottom: 1px solid rgb(98 104 120 / 45%);
+  padding-bottom: 5px;
+}
+
 /* displaygroupurl */
 .displayUrlGroup .card-header {
   border-bottom: transparent;
