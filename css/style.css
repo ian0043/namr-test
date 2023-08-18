@@ -256,12 +256,12 @@ footer img {
 }
 
 
-/* .displayUrlGroup .card-body:hover {
+.displayUrlGroup .card-body:hover {
   overflow-y: scroll;
-  scrollbar-color: gray;
+  /* scrollbar-color: gray;
   scrollbar-width: thin;
-  scrollbar-gutter: stable;
-} */
+  scrollbar-gutter: stable; */
+}
 
 .displayUrlGroup a {
   text-decoration: none;
