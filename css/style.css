@@ -2,6 +2,7 @@
   --bs-primary-rgb: 30, 33, 40;
   --bs-secondary-rgb: 98, 104, 120;
   --bs-success-rgb: 171, 197, 83;
+  --bs-form-check-bg: 255 255 255 / 55%;
 
   --line-height: 2.1rem;
   --line-thickness: 1px;
@@ -297,9 +298,9 @@ footer img {
 
 /* pixelBG */
 
-.bgContainer {
+/* .bgContainer {
   position: relative;
-}
+} */
 
 .pixelBg {
   /* position: absolute;
