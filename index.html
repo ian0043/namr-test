@@ -1375,6 +1375,7 @@
              //-----------------------------------------------------------------------------
          	this.checkLandingPageNamesDep = (function(c){
          		if( isEmpty(this.cleanCreative()) || isEmpty(this.appeal()) || this.appeal()=='na' || isEmpty(this.issues()) || this.issues()=='&nbsp;' || isEmpty(this.subissues()) || this.subissues()=='&nbsp;' ) {
+					//&nbsp; above used to be *
          			console.log("LandingPageDep: FALSE");
          			return false;
          		} else {
@@ -1411,12 +1412,12 @@
          
          		if (isEmpty(this.issues()) || this.issues()=='*') {
          			console.log("InGenerateSubIssues False Block");
-         					si[0] = "*";
+         					si[0] = "&nbsp;";//*
          			return si;
          		}else{
          			console.log("InGenerateSubIssues True Block Issues: "+ this.issues());
          
-         					si[0] = "*";
+         					si[0] = "&nbsp;";//*
          					si[1] = "Pos";
          					si[2] = "Neg";
          
