@@ -298,11 +298,11 @@ footer p {
   top: -2rem;
   left: -2rem;
   width: calc(100vw - 0.95rem);
-  background-image: url('https://raw.githubusercontent.com/ian0043/namr-test/main/assets/pixelbg.jpg');
+  background-image: url('https://raw.githubusercontent.com/ian0043/namr-test/main/assets/NAMr-Background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
-  opacity: 0.3;
+  opacity: 1;
 }
 
 
