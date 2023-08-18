@@ -339,3 +339,9 @@ main .border-container::after {
   right: -5.5px;
 }
 
+
+
+/* required span */
+span.req {
+  color: red;
+}
