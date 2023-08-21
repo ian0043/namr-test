@@ -274,6 +274,10 @@ footer img {
   color: #212529;
 }
 
+.displayUrlGroup .text-bg-secondary {
+  --bs-secondary-rgb: 63, 69, 83;
+}
+
 
 /* scrollbar */
 .displayUrlGroup .card-body::-webkit-scrollbar-thumb {
