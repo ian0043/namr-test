@@ -209,6 +209,9 @@ form .card p {
 /* footer */
 footer {
   padding-inline: 2rem;
+  background-image: url('https://raw.githubusercontent.com/ian0043/namr-test/main/assets/Footer-BG.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 footer .border-container {
