@@ -1,6 +1,6 @@
 :root {
   --bs-primary-rgb: 30, 33, 40;
-  --bs-secondary-rgb: 63, 69, 83;/*98, 104, 120*/
+  --bs-secondary-rgb: 98, 104, 120;
   --bs-success-rgb: 171, 197, 83;
 
   --bs-body-bg: #ffffff8c;
@@ -274,9 +274,9 @@ footer img {
   color: #212529;
 }
 
-/* .displayUrlGroup .text-bg-secondary {
+.displayUrlGroup .text-bg-secondary {
   --bs-secondary-rgb: 63, 69, 83;
-} */
+}
 
 
 /* scrollbar */
